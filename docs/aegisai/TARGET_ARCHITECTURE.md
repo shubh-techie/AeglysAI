@@ -1,6 +1,6 @@
 # Target Architecture
 
-This document describes the intended AegisAI architecture. It is a target direction, not the current implementation.
+This document describes the intended AeglysAI architecture. It is a target direction, not the current implementation.
 
 ## Detailed design
 
@@ -36,7 +36,7 @@ AEGISAI-002 provides a .NET 8 Clean Architecture solution and minimal health API
 been removed from the current working tree and will not be reused. New .NET 8
 code must follow Clean Architecture and SOLID, with meaningful automated tests.
 
-## PLANNED — AegisAI Components
+## PLANNED — AeglysAI Components
 
 Planned components:
 

@@ -1,4 +1,4 @@
-# AegisAI V0.1 readiness report
+# AeglysAI V0.1 readiness report
 
 Date: 2026-09-23  
 Assessment: **Ready for code review as an experimental local development baseline.**

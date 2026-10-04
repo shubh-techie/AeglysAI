@@ -3,7 +3,7 @@
 Date: 2026-09-25 | Baseline: AEGISAI-012
 Status: **PLANNED RESEARCH**, to be evaluated, subject to literature and prior-art review.
 
-AegisAI does **not** claim invention or novelty of RBAC, ABAC, Zero Trust,
+AeglysAI does **not** claim invention or novelty of RBAC, ABAC, Zero Trust,
 risk-based authorization, behavioral anomaly detection, machine learning,
 autonomous incident response, or feedback systems. It makes no priority or
 superiority claim for their combination. Defining this architecture is not proof

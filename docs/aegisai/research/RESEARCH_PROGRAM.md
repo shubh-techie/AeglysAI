@@ -6,7 +6,7 @@ Status: **IMPLEMENTED** definition; research outputs below **PLANNED**.
 | Relationship | Working name / scope | Evidence boundary |
 | --- | --- | --- |
 | Research umbrella | AI-Driven Automation for Resilient & Secure Cloud/Distributed Systems | Broader research theme, not a completed result |
-| Experimental platform | AegisAI — Adaptive Intelligence for Secure Distributed Systems | A–C software implemented; synthetic framework experimental; D planned |
+| Experimental platform | AeglysAI — Adaptive Intelligence for Secure Distributed Systems | A–C software implemented; synthetic framework experimental; D planned |
 | Research focus | Explainable, policy-bounded, adaptive security for cloud-native distributed systems | Defined investigation, not established effectiveness |
 | Paper #1 | Adaptive Risk-Aware Authorization for Zero-Trust Distributed Cloud Systems | Planned paper; conclusions require actual evidence |
 | Paper #2 | AI-Driven Behavioral Anomaly Detection and Autonomous Incident Response in Cloud-Native Systems | Planned paper; title does not imply implemented ML or unrestricted response |

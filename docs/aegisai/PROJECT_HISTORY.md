@@ -48,3 +48,14 @@ git archive --format=tar --output=/tmp/securing-microservices-legacy.tar securin
 ```
 
 These commands read the checkpoint; they do not rewrite history.
+
+## 2026-10-03 — AeglysAI rebrand
+
+AegisAI was rebranded as AeglysAI and the GitHub repository was
+renamed from shubh-techie/AegisAI to shubh-techie/AeglysAI.
+The rename preserves the complete project history and research
+lineage.
+
+This is a continuation of the existing project. The primary website is
+https://aeglysai.com. Historical milestones, research claims, experiment artifacts,
+implementation/model/publication/patent status, commits and tags are preserved.

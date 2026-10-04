@@ -1,4 +1,4 @@
-# AegisAI Threat Model V1
+# AeglysAI Threat Model V1
 
 Date: 2026-09-23  
 Status: PLANNED controls and verification; IMPLEMENTED documentation

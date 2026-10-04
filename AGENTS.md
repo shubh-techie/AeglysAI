@@ -1,15 +1,16 @@
-# AegisAI Agent Instructions
+# AeglysAI Agent Instructions
 
 Read this AGENTS.md before every future task and follow it throughout the work.
 
 ## Project identity
 
-AegisAI — Adaptive Intelligence for Secure Distributed Systems
+AeglysAI — Adaptive Intelligence for Secure Distributed Systems
 
 Observe. Assess. Authorize. Respond.
 
 Securing-Microservices is the historical 2022 project. AegisAI development begins
-in 2026. The legacy application is not reused; new implementation starts fresh.
+in 2026. The project continues as AeglysAI following its October 2026 rebrand.
+The legacy application is not reused; new implementation starts fresh.
 
 ## Git history rules
 

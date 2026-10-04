@@ -1,0 +1,690 @@
+file	original_line	original_column	match	classification	disposition
+.github/workflows/ci.yml	29	29	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+.github/workflows/ci.yml	32	27	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+.github/workflows/ci.yml	35	26	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AGENTS.md	1	3	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+AGENTS.md	7	1	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+AGENTS.md	11	56	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+AGENTS.md	21	15	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+AGENTS.md	38	44	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+AegisAI.sln	8	54	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	8	73	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	8	85	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	10	54	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	10	81	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	10	101	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	12	54	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	12	76	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	12	91	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	14	54	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	14	84	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	14	107	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	18	54	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	18	89	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	18	115	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	20	54	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	20	89	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	20	115	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	22	54	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	22	84	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	22	105	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	24	54	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	24	88	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	24	113	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	28	54	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	28	88	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	28	108	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	30	54	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	30	89	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	30	115	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	36	54	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	36	92	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+AegisAI.sln	36	109	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+README.md	1	3	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+README.md	10	1	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+README.md	33	28	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+README.md	34	4	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+README.md	49	38	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	51	30	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	55	69	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+README.md	61	28	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	62	24	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	68	6	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	70	44	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+README.md	91	75	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	106	26	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+README.md	113	21	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	114	16	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	126	17	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	135	40	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	144	17	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	145	16	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	155	17	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	156	16	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	164	56	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	171	53	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	177	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+README.md	177	49	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	178	37	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	179	23	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+README.md	182	24	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+benchmarks/AegisAI.Experiments/AegisAI.Experiments.csproj	7	42	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+benchmarks/AegisAI.Experiments/AegisAI.Experiments.csproj	7	62	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+benchmarks/AegisAI.Experiments/AegisAI.Experiments.csproj	8	42	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+benchmarks/AegisAI.Experiments/AegisAI.Experiments.csproj	8	65	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+benchmarks/AegisAI.Experiments/Experiment.cs	2	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+benchmarks/AegisAI.Experiments/Experiment.cs	3	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+benchmarks/AegisAI.Experiments/Experiment.cs	4	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+benchmarks/AegisAI.Experiments/Experiment.cs	6	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+benchmarks/AegisAI.Experiments/Program.cs	6	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+benchmarks/AegisAI.Experiments/Program.cs	14	38	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+benchmarks/AegisAI.Experiments/Program.cs	42	22	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+benchmarks/AegisAI.Experiments/Program.cs	51	170	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+benchmarks/AegisAI.Experiments/Program.cs	65	72	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+deployment/docker/AegisAI.DevTools/Program.cs	9	32	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+deployment/docker/AegisAI.DevTools/Program.cs	10	26	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+deployment/docker/AegisAI.DevTools/Program.cs	15	55	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+deployment/docker/Dockerfile	3	18	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+deployment/docker/Dockerfile	5	24	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+deployment/docker/Dockerfile	5	36	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+deployment/docker/Dockerfile	13	24	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+deployment/docker/compose.yaml	1	7	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+deployment/docker/compose.yaml	11	22	AEGISAI	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+dev	6	82	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+dev	26	50	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+dev	33	70	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/CURRENT_STATE.md	3	38	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/CURRENT_STATE.md	5	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/CURRENT_STATE.md	7	87	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/CURRENT_STATE.md	7	178	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/CURRENT_STATE.md	11	16	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/CURRENT_STATE.md	12	28	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/CURRENT_STATE.md	63	3	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/CURRENT_STATE.md	101	15	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/CURRENT_STATE.md	168	13	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/CURRENT_STATE.md	183	57	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	1	3	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	3	8	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	6	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	11	22	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	28	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	33	29	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	34	3	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	35	11	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	59	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	64	42	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	65	29	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	66	3	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	92	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	120	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	152	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	183	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	216	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	247	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	266	27	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	281	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	288	28	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	311	20	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	323	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	327	35	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	328	8	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	358	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	403	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	411	32	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	414	35	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	416	54	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	456	17	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	458	7	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	461	27	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	464	7	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/DEVELOPMENT_LOG.md	480	41	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/MIGRATION_PLAN.md	3	12	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/MIGRATION_PLAN.md	8	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/MIGRATION_PLAN.md	8	14	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/MIGRATION_PLAN.md	15	32	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/PROJECT_HISTORY.md	14	21	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/PROJECT_HISTORY.md	21	11	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/PROJECT_HISTORY.md	23	42	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/PROJECT_HISTORY.md	26	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/PROJECT_HISTORY.md	27	10	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/PROJECT_HISTORY.md	29	1	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/RESEARCH_SCOPE.md	3	1	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/RESEARCH_SCOPE.md	15	1	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/RESEARCH_SCOPE.md	33	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/RESEARCH_SCOPE.md	45	1	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/RESEARCH_SCOPE.md	90	1	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/TARGET_ARCHITECTURE.md	3	38	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/TARGET_ARCHITECTURE.md	35	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/TARGET_ARCHITECTURE.md	39	14	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/TARGET_ARCHITECTURE.md	86	4	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/TARGET_ARCHITECTURE.md	87	4	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/TARGET_ARCHITECTURE.md	88	4	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/TARGET_ARCHITECTURE.md	89	4	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/TARGET_ARCHITECTURE.md	90	4	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/TARGET_ARCHITECTURE.md	91	4	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/TARGET_ARCHITECTURE.md	92	4	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/V01_READINESS.md	1	3	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/V01_READINESS.md	43	6	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/V01_READINESS.md	44	52	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/V01_READINESS.md	49	3	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/V01_READINESS.md	54	45	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/adr/ADR-001-CLEAN-ARCHITECTURE.md	4	22	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/adr/ADR-001-CLEAN-ARCHITECTURE.md	8	1	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+docs/aegisai/adr/ADR-002-IDENTITY-BOUNDARY.md	4	22	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/adr/ADR-003-POLICY-EVALUATION.md	4	22	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/adr/ADR-004-RISK-ENGINE.md	4	22	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/adr/ADR-005-LOCAL-DEVELOPMENT-TRUST.md	4	22	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/adr/ADR-006-POLICY-BOUNDED-ADAPTIVE-SECURITY.md	7	14	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/adr/ADR-006-POLICY-BOUNDED-ADAPTIVE-SECURITY.md	11	1	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/adr/ADR-006-POLICY-BOUNDED-ADAPTIVE-SECURITY.md	102	15	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/architecture/RESEARCH_ARCHITECTURE.md	1	3	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/architecture/RESEARCH_ARCHITECTURE.md	4	73	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/architecture/RESEARCH_ARCHITECTURE.md	13	24	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/architecture/RESEARCH_ARCHITECTURE.md	17	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/architecture/RESEARCH_ARCHITECTURE.md	37	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/architecture/SYSTEM_ARCHITECTURE.md	1	3	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/architecture/SYSTEM_ARCHITECTURE.md	14	152	AEGISAI	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+docs/aegisai/architecture/SYSTEM_ARCHITECTURE.md	96	9	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/architecture/SYSTEM_ARCHITECTURE.md	96	38	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/architecture/SYSTEM_ARCHITECTURE.md	97	28	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/architecture/SYSTEM_ARCHITECTURE.md	99	31	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/CLAIMS_REGISTER.md	3	30	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/CLAIMS_REGISTER.md	17	115	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/CLAIMS_REGISTER.md	17	201	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/CLAIMS_REGISTER.md	18	111	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/CLAIMS_REGISTER.md	18	199	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/CLAIMS_REGISTER.md	19	111	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/CLAIMS_REGISTER.md	19	199	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/CLAIMS_REGISTER.md	24	3	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/research/CLAIMS_REGISTER.md	27	144	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/CLAIMS_REGISTER.md	29	3	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/research/CLAIMS_REGISTER.md	32	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/CONCEPTUAL_MODEL.md	3	30	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/INVENTION_CANDIDATES.md	3	30	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/PROPOSED_CONTRIBUTION.md	3	30	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/PROPOSED_CONTRIBUTION.md	6	1	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/research/RESEARCH_HYPOTHESES.md	3	41	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/RESEARCH_INTEGRITY.md	3	30	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/RESEARCH_INTEGRITY.md	30	56	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+docs/aegisai/research/RESEARCH_INTEGRITY.md	45	4	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/RESEARCH_MODELS.md	3	30	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/RESEARCH_MODELS.md	18	40	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/RESEARCH_MODELS.md	22	29	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/RESEARCH_MODELS.md	26	42	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/RESEARCH_MODELS.md	32	29	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/RESEARCH_MODELS.md	36	42	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/RESEARCH_MODELS.md	46	37	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/RESEARCH_MODELS.md	47	33	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/RESEARCH_MODELS.md	58	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/RESEARCH_MODELS.md	67	42	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/research/RESEARCH_PROBLEM.md	3	30	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/RESEARCH_PROBLEM.md	7	30	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/research/RESEARCH_PROBLEM.md	23	39	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/research/RESEARCH_PROBLEM.md	32	1	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/research/RESEARCH_PROGRAM.md	3	30	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/RESEARCH_PROGRAM.md	9	27	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/research/RESEARCH_PROGRAM.md	21	1	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+docs/aegisai/research/RESEARCH_PROGRAM.md	22	74	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+docs/aegisai/research/RESEARCH_QUESTION.md	3	30	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/research/RESEARCH_VARIABLES.md	3	30	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-002-SOLUTION-FOUNDATION.md	4	7	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-002-SOLUTION-FOUNDATION.md	9	8	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-002-SOLUTION-FOUNDATION.md	17	3	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-002-SOLUTION-FOUNDATION.md	18	3	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-002-SOLUTION-FOUNDATION.md	19	3	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-002-SOLUTION-FOUNDATION.md	20	3	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-002-SOLUTION-FOUNDATION.md	21	3	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-002-SOLUTION-FOUNDATION.md	22	3	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-002-SOLUTION-FOUNDATION.md	23	3	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-002-SOLUTION-FOUNDATION.md	24	3	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-003-AEGISAI-ARCHITECTURE.md	1	14	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+docs/aegisai/specs/SPEC-003-AEGISAI-ARCHITECTURE.md	4	7	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-003-AEGISAI-ARCHITECTURE.md	9	12	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-003-AEGISAI-ARCHITECTURE.md	11	55	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-003-AEGISAI-ARCHITECTURE.md	15	1	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+docs/aegisai/specs/SPEC-003-AEGISAI-ARCHITECTURE.md	26	1	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+docs/aegisai/specs/SPEC-003-AEGISAI-ARCHITECTURE.md	76	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-003-AEGISAI-ARCHITECTURE.md	100	28	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-005-RBAC.md	6	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-005-RBAC.md	6	72	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-005-RBAC.md	134	20	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-006-ABAC.md	6	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-006-ABAC.md	6	72	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-006-ABAC.md	137	23	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-007-CONTEXTUAL-RISK.md	6	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-007-CONTEXTUAL-RISK.md	6	72	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-007-CONTEXTUAL-RISK.md	151	6	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-008-AUDIT-OBSERVABILITY.md	77	33	AegisAI	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+docs/aegisai/specs/SPEC-008-AUDIT-OBSERVABILITY.md	86	3	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+docs/aegisai/specs/SPEC-008-AUDIT-OBSERVABILITY.md	87	3	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+docs/aegisai/specs/SPEC-008-AUDIT-OBSERVABILITY.md	88	3	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+docs/aegisai/specs/SPEC-008-AUDIT-OBSERVABILITY.md	89	3	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+docs/aegisai/specs/SPEC-008-AUDIT-OBSERVABILITY.md	93	63	AegisAI	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+docs/aegisai/specs/SPEC-008-AUDIT-OBSERVABILITY.md	94	15	AegisAI	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+docs/aegisai/specs/SPEC-009-EXPERIMENT-FRAMEWORK.md	9	26	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-009-EXPERIMENT-FRAMEWORK.md	11	39	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-010-V01-ENVIRONMENT.md	7	24	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-010-V01-ENVIRONMENT.md	7	44	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-010-V01-ENVIRONMENT.md	9	60	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+docs/aegisai/specs/SPEC-010-V01-ENVIRONMENT.md	44	7	AEGISAI	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+docs/aegisai/specs/SPEC-010-V01-ENVIRONMENT.md	85	9	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+docs/aegisai/specs/SPEC-010-V01-ENVIRONMENT.md	85	52	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+docs/aegisai/specs/SPEC-011-CI-SECURITY.md	4	7	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-011-CI-SECURITY.md	17	19	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-011-CI-SECURITY.md	18	17	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-011-CI-SECURITY.md	19	16	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-011-CI-SECURITY.md	48	50	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+docs/aegisai/specs/SPEC-012-RESEARCH-DEFINITION.md	5	7	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-012-RESEARCH-DEFINITION.md	7	20	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/specs/SPEC-012-RESEARCH-DEFINITION.md	13	59	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+docs/aegisai/specs/SPEC-012-RESEARCH-DEFINITION.md	19	26	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+docs/aegisai/specs/SPEC-012-RESEARCH-DEFINITION.md	93	23	AegisAI	HISTORICAL	Preserved historical development statement or original task/ADR scope.
+docs/aegisai/specs/SPEC-012-RESEARCH-DEFINITION.md	105	1	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+docs/aegisai/threat-model/THREAT_MODEL_V1.md	1	3	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+docs/aegisai/threat-model/THREAT_MODEL_V1.md	9	63	AEGISAI	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+docs/aegisai/threat-model/THREAT_MODEL_V1.md	10	4	AEGISAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/README.md	1	3	AegisAI	CURRENT_BRAND	Updated current display brand (README clone destination/URL supplied explicitly).
+research/README.md	11	73	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+research/README.md	21	33	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+research/README.md	102	24	aegisai	COMPATIBILITY_IDENTIFIER	Preserved document path and links.
+research/README.md	108	52	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/README.md	109	37	aegisai	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	29	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	30	17	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	30	37	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	31	17	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	32	17	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	34	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	34	22	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	35	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	36	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	37	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	38	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	39	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	40	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	41	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	42	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	43	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	44	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	44	30	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	45	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	46	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	47	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	48	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	49	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	50	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	51	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	52	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	53	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	54	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	55	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	56	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	57	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	58	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	59	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	60	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	60	25	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	61	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	62	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	63	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	64	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	65	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	66	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	67	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	68	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	69	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	70	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	70	33	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	71	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	72	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	73	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	74	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	75	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	75	38	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	76	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	77	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	78	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	79	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	79	38	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	80	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	81	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	81	33	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	82	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	83	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	84	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	85	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	85	38	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	86	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	87	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	87	37	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	88	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	89	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	90	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	91	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	92	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	93	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	96	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	97	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	98	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai009-smoke/environment.json	99	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	29	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	30	17	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	30	37	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	31	17	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	32	17	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	33	24	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	33	41	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	34	24	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	36	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	36	22	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	37	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	38	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	39	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	40	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	41	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	42	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	43	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	44	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	45	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	46	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	47	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	47	30	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	48	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	49	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	50	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	51	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	52	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	53	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	54	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	55	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	56	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	57	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	58	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	59	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	60	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	61	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	62	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	63	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	63	25	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	64	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	65	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	66	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	67	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	68	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	69	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	70	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	71	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	72	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	73	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	73	33	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	74	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	75	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	76	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	77	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	78	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	78	38	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	79	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	80	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	81	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	82	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	82	38	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	83	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	84	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	84	33	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	85	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	86	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	87	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	88	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	88	38	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	89	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	90	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	90	37	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	91	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	92	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	93	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	94	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	95	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	96	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	97	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	100	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	101	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	102	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/aegisai010-local-smoke/environment.json	103	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	29	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	30	17	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	30	37	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	31	17	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	32	17	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	33	24	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	33	41	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	34	24	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	36	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	36	22	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	37	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	38	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	39	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	40	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	41	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	42	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	43	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	44	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	45	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	46	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	47	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	47	30	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	48	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	49	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	50	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	51	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	52	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	53	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	54	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	55	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	56	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	57	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	58	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	59	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	60	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	61	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	62	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	63	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	63	25	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	64	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	65	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	66	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	67	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	68	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	69	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	70	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	71	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	72	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	73	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	73	33	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	74	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	75	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	76	10	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	77	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	78	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	78	38	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	79	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	80	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	81	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	82	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	82	38	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	83	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	84	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	84	33	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	85	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	86	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	87	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	88	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	88	38	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	89	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	90	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	90	37	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	91	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	92	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	93	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	94	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	95	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	96	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	97	12	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	100	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	101	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	102	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+research/results/local-validation/environment.json	103	6	AegisAI	HISTORICAL	Preserved provenance, snapshot, task ID or evidence.
+src/AegisAI.Api/AegisAI.Api.csproj	8	35	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/AegisAI.Api.csproj	8	55	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/AegisAI.Api.csproj	9	35	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/AegisAI.Api.csproj	9	58	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authentication/AuthenticationSetup.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authentication/AuthenticationSetup.cs	6	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authentication/HttpCurrentIdentity.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authentication/HttpCurrentIdentity.cs	3	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authentication/LocalDevelopmentTrust.cs	5	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authentication/LocalDevelopmentTrust.cs	10	43	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+src/AegisAI.Api/Authentication/LocalDevelopmentTrust.cs	11	37	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+src/AegisAI.Api/Authorization/AbacConfiguration.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/AbacConfiguration.cs	2	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/AbacConfiguration.cs	3	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/AbacConfiguration.cs	4	24	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/AbacConfiguration.cs	6	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/AuthorizationEndpoints.cs	2	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/AuthorizationEndpoints.cs	3	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/AuthorizationEndpoints.cs	4	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/AuthorizationEndpoints.cs	5	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/AuthorizationEndpoints.cs	6	24	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/AuthorizationEndpoints.cs	8	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/RbacConfiguration.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/RbacConfiguration.cs	2	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/RbacConfiguration.cs	3	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/RbacConfiguration.cs	4	24	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/RbacConfiguration.cs	6	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/RiskConfiguration.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/RiskConfiguration.cs	2	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/RiskConfiguration.cs	3	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Authorization/RiskConfiguration.cs	5	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Observability/AuthorizationObservation.cs	5	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Observability/AuthorizationObservation.cs	6	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Observability/AuthorizationObservation.cs	8	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Observability/AuthorizationObservation.cs	13	48	AegisAI	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+src/AegisAI.Api/Observability/AuthorizationObservation.cs	16	82	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+src/AegisAI.Api/Observability/AuthorizationObservation.cs	17	89	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+src/AegisAI.Api/Observability/AuthorizationObservation.cs	18	81	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+src/AegisAI.Api/Observability/AuthorizationObservation.cs	19	79	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+src/AegisAI.Api/Observability/AuthorizationObservation.cs	46	31	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+src/AegisAI.Api/Observability/AuthorizationObservation.cs	47	31	aegisai	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Observability/AuthorizationObservation.cs	70	39	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+src/AegisAI.Api/Observability/AuthorizationObservation.cs	71	39	aegisai	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Observability/LoggingAuthorizationAuditSink.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Observability/LoggingAuthorizationAuditSink.cs	3	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Program.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Program.cs	2	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Program.cs	3	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Program.cs	4	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Program.cs	5	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Api/Program.cs	6	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/AegisAI.Application.csproj	8	35	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/AegisAI.Application.csproj	8	50	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/AbacContext.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/AbacContext.cs	3	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/AbacEvaluator.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/AbacEvaluator.cs	3	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/AuthorizationDecision.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/AuthorizationRequest.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/AuthorizationRequest.cs	2	24	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/AuthorizationRequest.cs	4	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/ContextualRiskEngine.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/ContextualRiskEngine.cs	3	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/IAbacEvaluator.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/IAuthorizationEngine.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/IRbacPolicyProvider.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/ModelBAuthorizationEngine.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/ModelCAuthorizationEngine.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/RbacAuthorizationEngine.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/RbacAuthorizationEngine.cs	3	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/RbacPolicy.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Authorization/RbacPolicy.cs	3	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Identity/AuthenticatedIdentity.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Identity/ICurrentIdentity.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Application/Observability/AuthorizationAuditEvent.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Domain/Authorization/AbacRule.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Domain/Authorization/Action.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Domain/Authorization/AttributeCondition.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Domain/Authorization/AttributeSet.cs	3	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Domain/Authorization/Permission.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Domain/Authorization/Resource.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Domain/Authorization/RiskContext.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Domain/Authorization/Role.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Domain/Authorization/Subject.cs	1	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Infrastructure/AegisAI.Infrastructure.csproj	8	35	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Infrastructure/AegisAI.Infrastructure.csproj	8	55	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Infrastructure/AegisAI.Infrastructure.csproj	9	35	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Infrastructure/AegisAI.Infrastructure.csproj	9	50	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Infrastructure/Authorization/InMemoryAbacContextProvider.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Infrastructure/Authorization/InMemoryAbacContextProvider.cs	2	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Infrastructure/Authorization/InMemoryAbacContextProvider.cs	4	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Infrastructure/Authorization/InMemoryRbacPolicyProvider.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Infrastructure/Authorization/InMemoryRbacPolicyProvider.cs	3	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Infrastructure/Authorization/InMemoryRiskContextProvider.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Infrastructure/Authorization/InMemoryRiskContextProvider.cs	2	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+src/AegisAI.Infrastructure/Authorization/InMemoryRiskContextProvider.cs	4	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/AbacEvaluationTests.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/AbacEvaluationTests.cs	2	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/AbacEvaluationTests.cs	5	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/AegisAI.Application.Tests.csproj	10	42	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/AegisAI.Application.Tests.csproj	10	62	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/AuthenticatedIdentityTests.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/AuthenticatedIdentityTests.cs	4	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/ContextualRiskTests.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/ContextualRiskTests.cs	2	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/ContextualRiskTests.cs	5	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/RbacAuthorizationTests.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/RbacAuthorizationTests.cs	2	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Application.Tests/RbacAuthorizationTests.cs	5	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.ArchitectureTests/ProjectDependencyTests.cs	4	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.ArchitectureTests/ProjectDependencyTests.cs	16	55	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.ArchitectureTests/ProjectDependencyTests.cs	16	77	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.ArchitectureTests/ProjectDependencyTests.cs	23	41	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.ArchitectureTests/ProjectDependencyTests.cs	23	66	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.ArchitectureTests/ProjectDependencyTests.cs	42	63	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.ArchitectureTests/ProjectDependencyTests.cs	46	64	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Domain.Tests/AegisAI.Domain.Tests.csproj	10	42	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Domain.Tests/AegisAI.Domain.Tests.csproj	10	57	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Domain.Tests/AttributePolicyTests.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Domain.Tests/AttributePolicyTests.cs	4	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Domain.Tests/AuthorizationConceptTests.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Domain.Tests/AuthorizationConceptTests.cs	2	24	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Domain.Tests/AuthorizationConceptTests.cs	5	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Domain.Tests/RiskContextTests.cs	1	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Domain.Tests/RiskContextTests.cs	4	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Experiments.Tests/AegisAI.Experiments.Tests.csproj	10	49	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Experiments.Tests/AegisAI.Experiments.Tests.csproj	10	69	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Experiments.Tests/ExperimentTests.cs	2	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Experiments.Tests/ExperimentTests.cs	3	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.Experiments.Tests/ExperimentTests.cs	6	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AegisAI.IntegrationTests.csproj	10	42	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AegisAI.IntegrationTests.csproj	10	54	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AuthenticationTests.cs	7	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AuthenticationTests.cs	8	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AuthenticationTests.cs	18	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AuthenticationTests.cs	23	38	aegisai	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AuthorizationAuditTests.cs	7	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AuthorizationAuditTests.cs	8	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AuthorizationAuditTests.cs	9	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AuthorizationAuditTests.cs	16	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AuthorizationAuditTests.cs	113	71	aegisai	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AuthorizationAuditTests.cs	116	47	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+tests/AegisAI.IntegrationTests/AuthorizationAuditTests.cs	119	55	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+tests/AegisAI.IntegrationTests/AuthorizationAuditTests.cs	120	55	aegisai	COMPATIBILITY_IDENTIFIER	Preserved environment, Docker, JWT or telemetry contract.
+tests/AegisAI.IntegrationTests/AuthorizationEndpointTests.cs	9	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AuthorizationEndpointTests.cs	10	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/AuthorizationEndpointTests.cs	19	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/HealthEndpointTests.cs	6	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/LocalDevelopmentTrustTests.cs	6	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/LocalDevelopmentTrustTests.cs	14	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/ModelBEndpointTests.cs	5	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/ModelBEndpointTests.cs	6	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/ModelBEndpointTests.cs	11	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/ModelCEndpointTests.cs	4	7	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.
+tests/AegisAI.IntegrationTests/ModelCEndpointTests.cs	7	11	AegisAI	CODE_IDENTIFIER	Preserved solution/project, namespace, assembly or proposed module name.

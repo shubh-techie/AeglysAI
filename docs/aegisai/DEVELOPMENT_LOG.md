@@ -496,3 +496,44 @@ tree; pending review, not committed. Model D remains **PLANNED RESEARCH**.
 
 **EXPERIMENTAL**: existing A–C synthetic artifacts only; no new research evidence.
 **PLANNED**: literature-gap/prior-art review and subsequent Model D research.
+
+## 2026-10-03 — CORE-REBRAND-001 Repository Migration
+
+Status: **IMPLEMENTED** documentation/branding in the working tree; pending review.
+AegisAI continues as AeglysAI. The GitHub repository rename was already completed
+before this task; origin fetch/push already pointed to shubh-techie/AeglysAI.
+The primary website is https://aeglysai.com.
+
+- Started clean on main at 37f37d9; switched to the existing requested branch
+  chore/aeglysai-repo-migration at the same commit with approved Git access.
+- Read instructions, README, history/state/scope/architecture/migration documents,
+  all ADRs, workflows, Docker configuration, solution/projects and hypotheses.
+- Classified all 689 original tracked-text old-name matches in the
+  [occurrence audit](CORE-REBRAND-001-AUDIT.tsv). Changed 26 current-brand matches;
+  preserved historical, code and compatibility references. See the
+  [migration report](CORE-REBRAND-001.md) for scope and compatibility decisions.
+- Updated current display branding, canonical clone/repository links and website;
+  appended the factual rebrand milestone to PROJECT_HISTORY. No code identifier
+  renamed. CI/Docker/dev/source/tests/configuration and result artifacts unchanged.
+- Research changes only substitute the current platform display name. Claims,
+  model/implementation/publication/patent status and research definitions are
+  unchanged. RESEARCH_HYPOTHESES, CURRENT_STATE and MIGRATION_PLAN are byte-identical.
+- On macOS arm64, .NET SDK 8.0.204: dotnet restore AegisAI.sln passed;
+  dotnet build AegisAI.sln --configuration Release --no-restore passed with
+  zero warnings/errors; dotnet test AegisAI.sln --configuration Release
+  --no-build --no-restore passed 168 tests (14 Domain, 53 Application,
+  93 integration/security, 4 architecture, 4 experiments), none failed/skipped.
+  Initial sandboxed restore/build stalled and were stopped; approved tooling
+  access succeeded. No new research experiment or measured result was produced.
+- Validated local Markdown links and balanced fences, all 104 protected files
+  byte-identical, historical log/history prefixes preserved, git diff --check,
+  and new audit/report whitespace. External link availability was not tested;
+  canonical brand addresses came from the task. Docker runtime was not exercised
+  because its configuration and implementation are unchanged.
+- HEAD remains 37f37d99f7d9eda725b9452ed7db0a15e4b43c56. All three original tag
+  objects unchanged; securing-microservices-legacy still resolves to b9518fa
+  and contains GloboTicket.sln. No historical commit changed, no tag moved or
+  deleted. Final tree contains 16 modified Markdown files and two new audit/report
+  files; nothing staged. No commit, push, rebase, amend or history rewrite.
+
+**EXPERIMENTAL**: existing A–C artifacts only. **PLANNED** research remains unchanged.

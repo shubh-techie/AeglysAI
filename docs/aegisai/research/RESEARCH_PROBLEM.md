@@ -4,7 +4,7 @@ Date: 2026-09-25 | Baseline: AEGISAI-012
 Status: **IMPLEMENTED** research-definition documentation; investigation **PLANNED**.
 
 The research umbrella is **AI-Driven Automation for Resilient & Secure
-Cloud/Distributed Systems**. AegisAI — Adaptive Intelligence for Secure
+Cloud/Distributed Systems**. AeglysAI — Adaptive Intelligence for Secure
 Distributed Systems — is the experimental research platform within that program.
 Its focus is **explainable, policy-bounded, adaptive security for cloud-native
 distributed systems**.
@@ -20,7 +20,7 @@ cloud-native environments can nevertheless change, including:
 
 A valid identity and valid static authorization state therefore do not necessarily
 imply that runtime risk remains unchanged. This does not imply that RBAC or ABAC
-cannot incorporate changing evidence; AegisAI's current implementations use static
+cannot incorporate changing evidence; AeglysAI's current implementations use static
 snapshots and are deliberately limited experimental baselines.
 
 Allowing probabilistic AI/ML predictions to directly control authorization also
@@ -29,7 +29,7 @@ decisions, inappropriate autonomous actions, security-policy bypass, and
 operational disruption. More restrictive decisions alone do not establish better
 security: legitimate access and recovery can also suffer.
 
-AegisAI investigates whether behavioral and operational intelligence can augment
+AeglysAI investigates whether behavioral and operational intelligence can augment
 deterministic authorization while retaining explicit policy boundaries. This
 problem is not claimed to be an invention or an established research contribution.
 The [proposed contribution](PROPOSED_CONTRIBUTION.md) is subject to literature and

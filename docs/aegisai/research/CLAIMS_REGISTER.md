@@ -21,12 +21,12 @@ labels and do not substitute for claim verification.
 | Policy-bounded AI reduces inappropriate responses | UNPROVEN | Controlled comparison against direct ML enforcement with independent appropriateness labels and utility constraint | None | To be evaluated |
 | Operational state improves resilience | UNPROVEN | Controlled degraded-system experiments and matched operational-state ablation | None | Research hypothesis |
 | Adaptive authorization provides benefits within performance budgets | UNPROVEN | Joint security and performance evaluation against prespecified thresholds | None; narrow A–C smoke timing does not test H4 | Research hypothesis |
-| AegisAI is novel | UNVERIFIED | Literature and prior-art analysis supporting a precisely scoped distinction | Not completed | DO NOT CLAIM |
+| AeglysAI is novel | UNVERIFIED | Literature and prior-art analysis supporting a precisely scoped distinction | Not completed | DO NOT CLAIM |
 | Candidate mechanisms are patentable | UNVERIFIED | Prior-art review and patent-counsel review | Not established | Research / invention candidate only; DO NOT CLAIM patentability |
 | A–C synthetic engine-only smoke artifacts exist | VERIFIED | Raw observations, manifest, source and environment provenance | [Artifact description](../../../research/README.md), existing results directories | Experimental synthetic execution evidence; no effectiveness inference |
 | Model C explains its deterministic score arithmetic | VERIFIED | Contribution records, score recomputation and tests | [Scorer](../../../src/AegisAI.Application/Authorization/ContextualRiskEngine.cs) and contextual risk tests | Implemented arithmetic contributions and reasons; no demonstrated AI explainability |
 | Closed-loop adaptive enforcement is implemented | UNVERIFIED | State, feedback, enforcement code and integration/security validation | Absent; decision recommendations and best-effort audit only | PLANNED; DO NOT CLAIM implementation |
-| AegisAI is production-ready or superior to authorization systems generally | UNVERIFIED | Representative deployment/security evaluation and appropriately scoped comparisons | None; current single-process synthetic baseline is insufficient | DO NOT CLAIM |
+| AeglysAI is production-ready or superior to authorization systems generally | UNVERIFIED | Representative deployment/security evaluation and appropriately scoped comparisons | None; current single-process synthetic baseline is insufficient | DO NOT CLAIM |
 
 No research effectiveness, originality or patentability claim is verified by
 AEGISAI-012. Consult [integrity rules](RESEARCH_INTEGRITY.md) and

@@ -1,4 +1,4 @@
-# AegisAI authorization experiments
+# AeglysAI authorization experiments
 
 **EXPERIMENTAL — synthetic data only.** Models A (RBAC), B (RBAC + ABAC), and C
 (RBAC + ABAC + deterministic contextual risk) are executable. Model D remains

@@ -1,6 +1,6 @@
 # Research Scope
 
-AegisAI explores adaptive intelligence for secure distributed systems.
+AeglysAI explores adaptive intelligence for secure distributed systems.
 
 Research theme:
 
@@ -12,7 +12,7 @@ Tagline:
 
 ## Purpose
 
-AegisAI is intended to become an engineering and research platform for:
+AeglysAI is intended to become an engineering and research platform for:
 
 - Adaptive authorization
 - Contextual risk assessment
@@ -42,7 +42,7 @@ Consult the [claims register](research/CLAIMS_REGISTER.md) before public claims.
 
 ## Planned Experimental Models
 
-AegisAI should eventually support reproducible experiments comparing:
+AeglysAI should eventually support reproducible experiments comparing:
 
 - Model A: RBAC
 - Model B: RBAC + ABAC
@@ -87,7 +87,7 @@ Future experiments should be reproducible:
 
 ## Ethical and Security Boundaries
 
-AegisAI should avoid overstating AI capability. Research outputs should identify:
+AeglysAI should avoid overstating AI capability. Research outputs should identify:
 
 - Where a model is heuristic rather than learned.
 - Where a signal is noisy or biased.

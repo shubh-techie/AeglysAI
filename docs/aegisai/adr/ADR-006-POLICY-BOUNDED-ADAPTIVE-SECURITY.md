@@ -8,7 +8,7 @@ Recorded by: AEGISAI-012-DOC-COMPLETION; documentation pending review
 
 ## Context
 
-AegisAI currently implements deterministic authorization Models A–C. Future Model D
+AeglysAI currently implements deterministic authorization Models A–C. Future Model D
 proposes behavioral intelligence. Allowing probabilistic models to directly grant
 or deny access could create false-positive enforcement, false-negative enforcement,
 policy bypass, explainability problems, unstable autonomous actions and operational

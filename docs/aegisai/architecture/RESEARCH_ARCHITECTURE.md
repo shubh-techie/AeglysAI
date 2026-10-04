@@ -1,4 +1,4 @@
-# AegisAI Research Architecture
+# AeglysAI Research Architecture
 
 Date: 2026-09-23  
 Status: EXPERIMENTAL; initial synthetic engine-only smoke run executed (AEGISAI-009)
