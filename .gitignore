@@ -376,3 +376,87 @@ MigrationBackup/
 
 # Generated local Docker development credentials and configuration
 deployment/docker/.local/
+
+# Confidential material belongs outside this repository. These are backup guards.
+**/patent-private/
+**/private-research/
+**/attorney-private/
+**/evidence-private/
+**/confidential-local/
+**/*.confidential.*
+**/*.patent-draft.*
+**/.aws/
+**/.azure/
+**/.ssh/
+**/credentials.local.json
+**/*.snk
+**/gitleaks-report*.json
+/research/results/local-*/
+
+# ==============================================
+# AeglysAI - confidential and patent-related files
+# Keep unpublished invention materials outside Git
+# ==============================================
+
+# Private local directories
+/patent-private/
+/patent-confidential/
+/private-research/
+/confidential/
+/attorney-review/
+/invention-disclosures/
+/.ip-private/
+/.local-private/
+
+# Explicit local patent documentation
+**/*_Attorney_Draft.docx
+**/*_Attorney_Handover*.docx
+**/*Patent_Specification*.docx
+**/*Patent_Claims*.docx
+**/*Prior_Art_and_Gap_Analysis*.docx
+**/*Invention_Disclosure*.docx
+**/*Patent_Confidential*.pdf
+
+# Confidential experiments and data
+/research/private/
+/research/confidential/
+/research/results-private/
+/research/datasets-private/
+/benchmarks/private/
+/models/private/
+/evidence/private/
+
+# Keys, tokens and local credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+**/secrets.json
+**/appsettings.*.local.json
+**/appsettings.Secrets.json
+*.pem
+*.p12
+*.pfx
+*.key
+*.jks
+*.keystore
+*.kdbx
+id_rsa
+id_ed25519
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+*.auto.tfvars
+
+# Local development tools and scratch work
+.local/
+.tmp/
+.scratch/
+*.local.db
+*.sqlite
+*.sqlite3
+
+# AI assistant working notes containing
+# potential unpublished disclosure
+/.codex-private/
+/.agent-private/

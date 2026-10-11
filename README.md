@@ -23,6 +23,14 @@ No research findings, production datasets, or publications are claimed. A synthe
 engine-only smoke run is available for framework validation; it supports no broad
 performance claims.
 
+AEGISAI-013 adds locally tested secret/disclosure gates and private-material
+ignore guards. Existing audit findings remain **NOT CLEARED**; publication is
+on hold and Model D work has not started. See the
+[audit and baseline assessment](docs/aegisai/specs/SPEC-013-DISCLOSURE-PROTECTION.md),
+[security policy](SECURITY_AND_DISCLOSURE_POLICY.md) and
+[local scan instructions](scripts/security/README.md). Hosted security CI and
+required-check settings remain **NOT VERIFIED**.
+
 ## Quick Start — local Docker development
 
 Prerequisites: Git, a POSIX shell, Docker with Compose, and a running Linux

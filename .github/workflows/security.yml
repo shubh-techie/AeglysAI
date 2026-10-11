@@ -1,0 +1,34 @@
+name: Security and disclosure gate
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publication-safety:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Install checksum-verified scanner
+        run: |
+          sh scripts/security/install-gitleaks.sh "$RUNNER_TEMP/aegisai-tools"
+          echo "$RUNNER_TEMP/aegisai-tools" >> "$GITHUB_PATH"
+      - name: Test local gates
+        run: python3 -m unittest discover -s scripts/security/tests -v
+      - name: Scan tracked contents and all locally reachable history
+        shell: bash
+        run: |
+          failed=0
+          python3 scripts/security/scan.py tracked || failed=1
+          python3 scripts/security/scan.py history || failed=1
+          exit "$failed"

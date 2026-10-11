@@ -16,3 +16,25 @@
 .codex
 .agents
 research/results
+
+# Defense in depth: never send private material or local credentials to builders.
+**/patent-private
+**/private-research
+**/attorney-private
+**/evidence-private
+**/confidential-local
+**/*.confidential.*
+**/*.patent-draft.*
+**/.aws
+**/.azure
+**/.ssh
+**/credentials.local.json
+**/gitleaks-report*.json
+**/*.snk
+**/*.publishsettings
+**/artifacts
+**/TestResults
+**/BenchmarkDotNet.Artifacts
+.githooks
+# Existing invention-oriented prose awaits human disclosure review.
+docs/aegisai/research
