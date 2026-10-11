@@ -4,8 +4,8 @@ Requirements: Git, Python 3.10 or newer, and Gitleaks **8.30.1** on PATH.
 Install the checksum-verified upstream binary into a directory outside the repo:
 
 ```sh
-sh scripts/security/install-gitleaks.sh /tmp/aegisai-security-tools
-export PATH="/tmp/aegisai-security-tools:$PATH"
+sh scripts/security/install-gitleaks.sh /tmp/aeglysai-security-tools
+export PATH="/tmp/aeglysai-security-tools:$PATH"
 python3 -m unittest discover -s scripts/security/tests -v
 python3 scripts/security/scan.py staged
 python3 scripts/security/scan.py tracked

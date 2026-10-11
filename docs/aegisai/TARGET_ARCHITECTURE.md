@@ -1,6 +1,6 @@
 # Target Architecture
 
-This document describes the intended AegisAI architecture. It is a target direction, not the current implementation.
+This document describes the intended AeglysAI architecture. It is a target direction, not the current implementation.
 
 ## Detailed design
 
@@ -36,7 +36,7 @@ AEGISAI-002 provides a .NET 8 Clean Architecture solution and minimal health API
 been removed from the current working tree and will not be reused. New .NET 8
 code must follow Clean Architecture and SOLID, with meaningful automated tests.
 
-## PLANNED — AegisAI Components
+## PLANNED — AeglysAI Components
 
 Planned components:
 
@@ -83,13 +83,13 @@ integrations remain PLANNED. See the current
 
 Potential future services and modules:
 
-- `AegisAI.Gateway`
-- `AegisAI.Identity` or external OIDC provider integration
-- `AegisAI.Authorization`
-- `AegisAI.Risk`
-- `AegisAI.Policy`
-- `AegisAI.Telemetry`
-- `AegisAI.Experiments`
+- `AeglysAI.Gateway`
+- `AeglysAI.Identity` or external OIDC provider integration
+- `AeglysAI.Authorization`
+- `AeglysAI.Risk`
+- `AeglysAI.Policy`
+- `AeglysAI.Telemetry`
+- `AeglysAI.Experiments`
 - Python experiment services or notebooks under `research/`
 
 New service boundaries will be decided through specifications and ADRs. GloboTicket services will not be reused.

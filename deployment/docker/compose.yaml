@@ -1,4 +1,5 @@
-name: aegisai-local
+# Keep existing local resources addressable; opt in to a new name after shutdown.
+name: ${AEGLYSAI_COMPOSE_PROJECT:-aegisai-local}
 services:
   api:
     build:
@@ -8,7 +9,7 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     ports:
-      - "127.0.0.1:${AEGISAI_PORT:-5080}:8080"
+      - "127.0.0.1:${AEGLYSAI_PORT:-${AEGISAI_PORT:-5080}}:8080"
     volumes:
       - ./.local/appsettings.Development.json:/app/appsettings.Development.json:ro
     read_only: true

@@ -547,3 +547,40 @@ AEGISAI-014–024 remain **PLANNED**, not started.
 Phase 1 cannot be marked cleared while the audit gates fail. Owner/counsel review
 and approved remediation are the continuation gate; the remaining phases and
 private implementation gaps are recorded in SPEC-013 without disclosing mechanisms.
+
+## 2026-10-11 — AEGLYSAI-013B: Naming and domain migration
+
+Status: **IMPLEMENTED / TESTED** in the working tree; pending review, not committed.
+
+- Started from clean security cleanup at 0256125; created the requested local
+  refactor/AEGLYSAI-013B-project-rename branch. The origin already points to
+  shubh-techie/AeglysAI; no remote rename or publication occurred.
+- Audited branding, namespace/project identities, build/deployment paths, external
+  configuration and stable trust/telemetry identifiers before editing. Reported
+  source/binary compatibility risks before the scoped rename.
+- Renamed the solution, eleven projects/folders, fourteen namespace groups and
+  authentication registration extension; updated build, CI, Docker and experiment
+  snapshot paths. Preserved inward dependencies, .NET 8 and behavior.
+- Added official supplied website/repository links and current AeglysAI guidance.
+  Historical AEGISAI identifiers, original log entries, historical snapshots,
+  canonical research wording and frozen result/archive bytes remain preserved.
+  Two canonical documents' code links now target immutable pre-migration source.
+- Kept token issuer/audience, configuration sections, routes, telemetry identifiers,
+  model/policy versions and default Compose resource identity stable. Added a new
+  port variable with legacy fallback and explicit opt-in Compose identity.
+- Removed only ignored old build outputs/empty project folders and rebuilt new
+  outputs. No private original, credential, key, history or tag was modified.
+- Validation: restore and Release build passed; zero build warnings/errors. All
+  168 .NET tests passed (14 Domain, 53 Application, 93 integration/security,
+  4 architecture, 4 experiments), zero failed/skipped. Existing 16 Python security
+  tests and five new Compose compatibility tests passed. Compose config, project
+  references, namespace imports, local links/fences and whitespace checks passed.
+- Proposed tracked scan used an isolated index to represent unstaged renames;
+  the real index remained untouched. Tracked/history scans returned exit 1 for
+  known security/disclosure findings; no exemptions or bypasses were added.
+- Hosted CI, Docker image startup, external consumers, live deployments, domain
+  hosting and security/disclosure clearance remain **NOT VERIFIED**. Credential
+  revocation, signing-key retirement and counsel determination are unconfirmed.
+- The current guide, exact inventory and compatibility transitions are in
+  [the migration report](../aeglysai/AEGLYSAI-013B-NAMING-MIGRATION.md).
+  No commit, push, merge, PR creation, history rewrite or Model D work performed.

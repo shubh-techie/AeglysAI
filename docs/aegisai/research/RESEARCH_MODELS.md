@@ -15,25 +15,25 @@ usage are **EXPERIMENTAL** software baselines.
 
 ## Model A
 
-[RbacAuthorizationEngine](../../../src/AegisAI.Application/Authorization/RbacAuthorizationEngine.cs)
+[RbacAuthorizationEngine](https://github.com/shubh-techie/AeglysAI/blob/02561254764386978133b154b1a8a2d1ef6726af/src/AegisAI.Application/Authorization/RbacAuthorizationEngine.cs)
 uses issuer-qualified subjects, server-owned role assignments and exact
 resource/action permissions. Role grants combine by union; absent grants deny.
 Outcomes are ALLOW/DENY. See [SPEC-005](../specs/SPEC-005-RBAC.md) and
-[unit tests](../../../tests/AegisAI.Application.Tests/RbacAuthorizationTests.cs).
+[unit tests](https://github.com/shubh-techie/AeglysAI/blob/02561254764386978133b154b1a8a2d1ef6726af/tests/AegisAI.Application.Tests/RbacAuthorizationTests.cs).
 
 ## Model B
 
-[ModelBAuthorizationEngine](../../../src/AegisAI.Application/Authorization/ModelBAuthorizationEngine.cs)
+[ModelBAuthorizationEngine](https://github.com/shubh-techie/AeglysAI/blob/02561254764386978133b154b1a8a2d1ef6726af/src/AegisAI.Application/Authorization/ModelBAuthorizationEngine.cs)
 requires RBAC to allow before evaluating ABAC. All applicable equality conditions
 must pass; missing attributes or rules deny. Subject/resource/environment values
 are static server snapshots; the requested action is request-bound. This limited
 ABAC language does not represent every ABAC implementation. See
 [SPEC-006](../specs/SPEC-006-ABAC.md) and
-[unit tests](../../../tests/AegisAI.Application.Tests/AbacEvaluationTests.cs).
+[unit tests](https://github.com/shubh-techie/AeglysAI/blob/02561254764386978133b154b1a8a2d1ef6726af/tests/AegisAI.Application.Tests/AbacEvaluationTests.cs).
 
 ## Model C
 
-[ModelCAuthorizationEngine](../../../src/AegisAI.Application/Authorization/ModelCAuthorizationEngine.cs)
+[ModelCAuthorizationEngine](https://github.com/shubh-techie/AeglysAI/blob/02561254764386978133b154b1a8a2d1ef6726af/src/AegisAI.Application/Authorization/ModelCAuthorizationEngine.cs)
 requires Model B to allow before contextual scoring. The fixed weighted heuristic
 uses AuthenticationWeakness, ResourceSensitivity, OperationSensitivity,
 NetworkExposure, and DeviceExposure. These are configured simulation indicators,
@@ -43,8 +43,8 @@ Missing indicators yield Unknown and DENY; weights and thresholds are uncalibrat
 Complete scores map to ALLOW below 0.25, STEP_UP below 0.50, LIMIT below 0.75,
 and DENY otherwise. STEP_UP and LIMIT carry obligations, not enforcement.
 See [SPEC-007](../specs/SPEC-007-CONTEXTUAL-RISK.md),
-[ContextualRiskEngine](../../../src/AegisAI.Application/Authorization/ContextualRiskEngine.cs),
-and [unit tests](../../../tests/AegisAI.Application.Tests/ContextualRiskTests.cs).
+[ContextualRiskEngine](https://github.com/shubh-techie/AeglysAI/blob/02561254764386978133b154b1a8a2d1ef6726af/src/AegisAI.Application/Authorization/ContextualRiskEngine.cs),
+and [unit tests](https://github.com/shubh-techie/AeglysAI/blob/02561254764386978133b154b1a8a2d1ef6726af/tests/AegisAI.Application.Tests/ContextualRiskTests.cs).
 
 ## Model D — proposed future scope
 
@@ -64,7 +64,7 @@ existing artifacts retain their original meaning; they are not relabeled as D.
 
 ## Comparison boundaries
 
-The [current runner](../../../benchmarks/AegisAI.Experiments/Experiment.cs) executes
+The [current runner](https://github.com/shubh-techie/AeglysAI/blob/02561254764386978133b154b1a8a2d1ef6726af/benchmarks/AegisAI.Experiments/Experiment.cs) executes
 only A–C with paired seeded synthetic workloads. It has no D implementation,
 independent attack labels, dynamic behavior or operational-state injection. The
 API endpoints evaluate decisions only and do not perform protected operations.

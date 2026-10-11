@@ -90,7 +90,7 @@ def scanner():
 
 def secrets(executable, target, history=False):
     # All raw diagnostics remain private and temporary; only paths leave this process.
-    with tempfile.TemporaryDirectory(prefix="aegisai-secret-scan-") as temporary:
+    with tempfile.TemporaryDirectory(prefix="aeglysai-secret-scan-") as temporary:
         private = Path(temporary)
         result_path = private / "report.json"
         command = [executable, "git" if history else "dir", str(target),
@@ -152,7 +152,7 @@ def run(root, mode, check):
         if executable:
             failed = secrets(executable, root, history=True) or failed
     else:
-        with tempfile.TemporaryDirectory(prefix="aegisai-index-scan-") as temporary:
+        with tempfile.TemporaryDirectory(prefix="aeglysai-index-scan-") as temporary:
             snapshot = Path(temporary)
             for name, content in entries(root, mode):
                 path = PurePosixPath(name)

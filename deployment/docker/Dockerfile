@@ -1,8 +1,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim AS build
 WORKDIR /source
-COPY global.json AegisAI.sln ./
+COPY global.json AeglysAI.sln ./
 COPY src/ src/
-RUN dotnet publish src/AegisAI.Api/AegisAI.Api.csproj -c Release -o /publish
+RUN dotnet publish src/AeglysAI.Api/AeglysAI.Api.csproj -c Release -o /publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim AS api
 WORKDIR /app
@@ -10,7 +10,7 @@ COPY --from=build /publish ./
 USER app
 ENV ASPNETCORE_HTTP_PORTS=8080
 EXPOSE 8080
-ENTRYPOINT ["dotnet", "AegisAI.Api.dll"]
+ENTRYPOINT ["dotnet", "AeglysAI.Api.dll"]
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim AS tools
 RUN apt-get update && apt-get install -y --no-install-recommends git \
