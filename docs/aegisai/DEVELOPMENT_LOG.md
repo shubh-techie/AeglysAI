@@ -595,3 +595,98 @@ five Compose compatibility tests, Compose configuration, local links and diff
 checks passed. Full tracked/history scans still fail on existing AEGISAI-013
 findings; no suppression or clearance is claimed. No commit/push or Model D work.
 See [follow-up inventory and validation](../aeglysai/AEGLYSAI-013B-NAMING-RECHECK.md).
+
+
+## 2026-10-11 — COM-001 and COM-003A local community foundation
+
+**IMPLEMENTED / TESTED locally:** governance and evidence taxonomy, schema 1.0.0,
+offline validator, synthetic valid/invalid fixtures, issue/PR templates and roadmap;
+five language-neutral challenge contracts with submission, reproduction and safety
+templates. Added ADR-008/009, SPEC-014/015 and community contract CI job.
+The received request ended partway through COM-003A; COM-005, COM-007A and COM-008A
+remain **PLANNED / BLOCKED ON REQUIREMENTS**. Missing requirements were requested.
+Twenty-two new tests and 16 existing security tests pass; fixture CLI and dependency
+consistency checks pass. No .NET implementation or historical evidence was changed.
+Full repository disclosure/security findings still block publication; no suppression,
+commit, push, PR creation or Model D work. Actual checks and review boundaries are in
+[community sprint status](../../community/SPRINT-STATUS.md).
+
+
+## 2026-10-11 — COM-001: community recovery implementation
+
+IMPLEMENTED / TESTED locally: evidence documentation, contracts and acceptance tests.
+24 task tests passed in the integrated recovery snapshot; no real-world
+community outcome is asserted. See [task status](../../community/evidence/STATUS.md),
+ADR-008 and SPEC-014.
+Independent worktree/staged gates and full-suite results are recorded in the recovery
+handover. Existing tracked/history security findings still block publication.
+No commit, push, merge, PR creation, history rewrite, Model D or Portal work.
+
+
+## 2026-10-11 — COM-003A: community recovery implementation
+
+IMPLEMENTED / TESTED locally: hackathon documentation, contracts and acceptance tests.
+4 task tests passed in the integrated recovery snapshot; no real-world
+community outcome is asserted. See [task status](../../community/hackathon/STATUS.md),
+ADR-009 and SPEC-015.
+Independent worktree/staged gates and full-suite results are recorded in the recovery
+handover. Existing tracked/history security findings still block publication.
+No commit, push, merge, PR creation, history rewrite, Model D or Portal work.
+
+
+## 2026-10-11 — COM-005: community recovery implementation
+
+IMPLEMENTED / TESTED locally: contributors documentation, contracts and acceptance tests.
+12 task tests passed in the integrated recovery snapshot; no real-world
+community outcome is asserted. See [task status](../../community/contributors/STATUS.md),
+ADR-010 and SPEC-016.
+Independent worktree/staged gates and full-suite results are recorded in the recovery
+handover. Existing tracked/history security findings still block publication.
+No commit, push, merge, PR creation, history rewrite, Model D or Portal work.
+
+
+## 2026-10-11 — COM-007A: community recovery implementation
+
+IMPLEMENTED / TESTED locally: adoption documentation, contracts and acceptance tests.
+13 task tests passed in the integrated recovery snapshot; no real-world
+community outcome is asserted. See [task status](../../community/adoption/STATUS.md),
+ADR-011 and SPEC-017.
+Independent worktree/staged gates and full-suite results are recorded in the recovery
+handover. Existing tracked/history security findings still block publication.
+No commit, push, merge, PR creation, history rewrite, Model D or Portal work.
+
+
+## 2026-10-11 — COM-008A: community recovery implementation
+
+IMPLEMENTED / TESTED locally: reporting documentation, contracts and acceptance tests.
+27 task tests passed in the integrated recovery snapshot; no real-world
+community outcome is asserted. See [task status](../../community/reporting/STATUS.md),
+ADR-012 and SPEC-018.
+Independent worktree/staged gates and full-suite results are recorded in the recovery
+handover. Existing tracked/history security findings still block publication.
+No commit, push, merge, PR creation, history rewrite, Model D or Portal work.
+
+
+## 2026-10-11 — COM-001: final compliance and participation review
+
+Updated only the affected community contracts, documentation and tests. 24 task tests passed in the combined snapshot. Mandatory individual qualification, team/privacy boundaries and competition-versus-adoption distinctions are documented. Schemas remain byte-identical at 1.0.0; an event-stage extension is PLANNED. Full tracked/history security findings remain unresolved. See community/REVIEW-002-HANDOVER.md in the integrated recovery snapshot; isolated task validation is recorded in task STATUS.md. No commit, push, PR or Portal modification.
+
+
+## 2026-10-11 — COM-003A: final compliance and participation review
+
+Updated only the affected community contracts, documentation and tests. 11 task tests passed in the combined snapshot. Mandatory individual qualification, team/privacy boundaries and competition-versus-adoption distinctions are documented. Schemas remain byte-identical at 1.0.0; an event-stage extension is PLANNED. Full tracked/history security findings remain unresolved. See community/REVIEW-002-HANDOVER.md in the integrated recovery snapshot; isolated task validation is recorded in task STATUS.md. No commit, push, PR or Portal modification.
+
+
+## 2026-10-11 — COM-005: final compliance and participation review
+
+Updated only the affected community contracts, documentation and tests. 12 task tests passed in the combined snapshot. Mandatory individual qualification, team/privacy boundaries and competition-versus-adoption distinctions are documented. Schemas remain byte-identical at 1.0.0; an event-stage extension is PLANNED. Full tracked/history security findings remain unresolved. See community/REVIEW-002-HANDOVER.md in the integrated recovery snapshot; isolated task validation is recorded in task STATUS.md. No commit, push, PR or Portal modification.
+
+
+## 2026-10-11 — COM-007A: final compliance and participation review
+
+Updated only the affected community contracts, documentation and tests. 13 task tests passed in the combined snapshot. Mandatory individual qualification, team/privacy boundaries and competition-versus-adoption distinctions are documented. Schemas remain byte-identical at 1.0.0; an event-stage extension is PLANNED. Full tracked/history security findings remain unresolved. See community/REVIEW-002-HANDOVER.md in the integrated recovery snapshot; isolated task validation is recorded in task STATUS.md. No commit, push, PR or Portal modification.
+
+
+## 2026-10-11 — COM-008A: final compliance and participation review
+
+Updated only the affected community contracts, documentation and tests. 27 task tests passed in the combined snapshot. Mandatory individual qualification, team/privacy boundaries and competition-versus-adoption distinctions are documented. Schemas remain byte-identical at 1.0.0; an event-stage extension is PLANNED. Full tracked/history security findings remain unresolved. See community/REVIEW-002-HANDOVER.md in the integrated recovery snapshot; isolated task validation is recorded in task STATUS.md. No commit, push, PR or Portal modification.

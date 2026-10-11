@@ -1,0 +1,135 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "data_kind": {
+      "enum": [
+        "SYNTHETIC",
+        "PUBLIC_AGGREGATE"
+      ]
+    },
+    "recognitions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500,
+            "pattern": "^[a-z][a-z0-9-]{2,63}$"
+          },
+          "contribution_reference": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "^https://[A-Za-z0-9.-]+/[A-Za-z0-9/_.-]+$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "credit_mode": {
+            "enum": [
+              "artifact-only",
+              "anonymous",
+              "none"
+            ]
+          },
+          "contribution_accepted": {
+            "type": "boolean"
+          },
+          "consent": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "state": {
+                "enum": [
+                  "not-requested",
+                  "granted",
+                  "withdrawn"
+                ]
+              },
+              "scope": {
+                "enum": [
+                  "none",
+                  "public-attribution"
+                ]
+              },
+              "review_reference": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 500,
+                    "pattern": "^https://[A-Za-z0-9.-]+/[A-Za-z0-9/_.-]+$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "state",
+              "scope",
+              "review_reference"
+            ]
+          },
+          "publication": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "state": {
+                "enum": [
+                  "draft",
+                  "published",
+                  "withdrawn"
+                ]
+              },
+              "review_approved": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "state",
+              "review_approved"
+            ]
+          },
+          "recorded_at": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500,
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$"
+          }
+        },
+        "required": [
+          "id",
+          "contribution_reference",
+          "credit_mode",
+          "contribution_accepted",
+          "consent",
+          "publication",
+          "recorded_at"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "data_kind",
+    "recognitions"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aeglysai.com/schemas/contributor-recognition/1.0.0",
+  "title": "AeglysAI public-safe recognition 1.0.0"
+}

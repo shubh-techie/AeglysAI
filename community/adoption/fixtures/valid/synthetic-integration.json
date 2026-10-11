@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "data_kind": "SYNTHETIC",
+  "records": [
+    {
+      "id": "synthetic-integration-001",
+      "claim_kind": "independent-adoption",
+      "source": {
+        "reference": "https://example.invalid/synthetic/integration",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "independence": {
+        "classification": "external",
+        "relationship": "independent",
+        "review_method": "Synthetic independence checklist; not a real external contributor."
+      },
+      "execution": {
+        "status": "executed",
+        "reference": "https://example.invalid/synthetic/integration-run",
+        "environment": "Synthetic third-party integration configuration; no actual organization or deployment.",
+        "source_commit": "0000000000000000000000000000000000000000"
+      },
+      "verification": {
+        "status": "verified",
+        "method": "Synthetic contract demonstration only.",
+        "review_reference": "https://example.invalid/synthetic/review"
+      },
+      "citations": [],
+      "record_state": "current",
+      "correction": null,
+      "limitations": [
+        "Entirely synthetic; no actual adoption, contributor or citation is asserted."
+      ]
+    }
+  ]
+}

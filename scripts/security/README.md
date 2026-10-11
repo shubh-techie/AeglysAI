@@ -52,8 +52,15 @@ the repo and are removed on normal completion. Do not set TMPDIR inside the repo
 No report upload or persistent raw-secret evidence is produced.
 
 Default Gitleaks rules plus a Service Bus shared-access-key rule apply. There is
-no history baseline, path allowlist, `.gitleaksignore` override or inline allow
-comment bypass. Archives and encoded data receive bounded secret scanning;
+no history baseline, broad path allowlist, `.gitleaksignore` override or inline allow
+comment bypass. Twelve owner-approved historical source-fingerprint findings have
+rule-scoped exceptions in `.gitleaks.toml`: each requires the exact immutable commit,
+anchored file path and original JSON field/value line together (`condition = "AND"`).
+Only `generic-api-key` is affected. Current/staged scans have no commit context and
+receive no exception; new commits and changed or unknown occurrences remain scanned.
+Private evidence records document independent source-byte SHA-256 verification.
+These exceptions do not clear credentials, signing keys, disclosures or archived
+research paths. Full tracked/history gates still fail on unresolved findings. Archives and encoded data receive bounded secret scanning;
 unsupported formats/encryption, detector limits and false negatives remain risks.
 Confidentiality checks detect reserved private paths and explicit markers in
 plain bytes; they cannot classify arbitrary prose or compressed invention text.

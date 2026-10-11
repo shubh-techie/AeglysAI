@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "data_kind": "SYNTHETIC",
+  "recognitions": [
+    {
+      "id": "synthetic-credit-001",
+      "contribution_reference": null,
+      "credit_mode": "none",
+      "contribution_accepted": true,
+      "consent": {
+        "state": "withdrawn",
+        "scope": "none",
+        "review_reference": null
+      },
+      "publication": {
+        "state": "withdrawn",
+        "review_approved": false
+      },
+      "recorded_at": "2026-10-01T00:00:00Z"
+    }
+  ]
+}

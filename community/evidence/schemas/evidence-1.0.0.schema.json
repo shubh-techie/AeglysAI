@@ -1,0 +1,273 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "data_kind": {
+      "enum": [
+        "SYNTHETIC",
+        "PUBLIC_AGGREGATE"
+      ]
+    },
+    "metrics": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{2,63}$"
+          },
+          "level": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "definition": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500,
+            "pattern": "\\S"
+          },
+          "unit": {
+            "enum": [
+              "views",
+              "unique-interests",
+              "participants",
+              "accepted-contributions",
+              "independent-reproductions"
+            ]
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "source": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "synthetic",
+                  "public-aggregate"
+                ]
+              },
+              "reference": {
+                "type": "string",
+                "pattern": "^https://[A-Za-z0-9.-]+/[A-Za-z0-9/_.-]+$",
+                "maxLength": 500
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "kind",
+              "reference",
+              "sha256"
+            ]
+          },
+          "period": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "start": {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$"
+              },
+              "end": {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?(?:Z|[+-]\\d{2}:\\d{2})$"
+              }
+            },
+            "required": [
+              "start",
+              "end"
+            ]
+          },
+          "deduplication": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "method": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "\\S"
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "\\S"
+              },
+              "raw_count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "excluded_count": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "method",
+              "unit",
+              "raw_count",
+              "excluded_count"
+            ]
+          },
+          "verification": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "status": {
+                "enum": [
+                  "draft",
+                  "verified"
+                ]
+              },
+              "method": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500,
+                "pattern": "\\S"
+              },
+              "review_reference": {
+                "type": "string",
+                "pattern": "^https://[A-Za-z0-9.-]+/[A-Za-z0-9/_.-]+$",
+                "maxLength": 500
+              }
+            },
+            "required": [
+              "status",
+              "method",
+              "review_reference"
+            ]
+          },
+          "limitations": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 10,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500,
+              "pattern": "\\S"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "level",
+          "definition",
+          "unit",
+          "count",
+          "source",
+          "period",
+          "deduplication",
+          "verification",
+          "limitations"
+        ],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "level": {
+                  "const": 1
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "unit": {
+                  "const": "views"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "level": {
+                  "const": 2
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "unit": {
+                  "const": "unique-interests"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "level": {
+                  "const": 3
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "unit": {
+                  "const": "participants"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "level": {
+                  "const": 4
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "unit": {
+                  "const": "accepted-contributions"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "level": {
+                  "const": 5
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "unit": {
+                  "const": "independent-reproductions"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "data_kind",
+    "metrics"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aeglysai.com/schemas/community-evidence/1.0.0",
+  "title": "AeglysAI public-safe community evidence 1.0.0"
+}

@@ -1,4 +1,4 @@
-title = "AeglysAI secret detection (no historical exceptions)"
+title = "AeglysAI secret detection (12 verified historical source-fingerprint exceptions)"
 
 [extend]
 useDefault = true
@@ -9,3 +9,104 @@ description = "Service Bus shared access credential"
 regex = '''(?i)SharedAccessKey\s*=\s*([A-Za-z0-9+/]{20,}={0,2})'''
 secretGroup = 1
 keywords = ["SharedAccessKey"]
+
+# Exactly twelve owner-approved immutable historical occurrences.
+# Directory/staged scans and all new commits receive no exception.
+[[rules]]
+id = "generic-api-key"
+
+[[rules.allowlists]]
+description = "Verified source fingerprint 1; immutable historical occurrence only"
+condition = "AND"
+commits = ["ecb96495ba9da5fbff140e864b9d4d01b8497adb"]
+paths = ['''^research/results/aegisai009\-smoke/environment\.json$''']
+regexTarget = "line"
+regexes = ['''^[\r\n]*    "src/AegisAI\.Api/AegisAI\.Api\.csproj": "101a9f3d4ee2ddbc63eca3cac14d83f85ca8f5d012145ed2cbbe771fed448594",[\r\n]*$''']
+
+[[rules.allowlists]]
+description = "Verified source fingerprint 2; immutable historical occurrence only"
+condition = "AND"
+commits = ["415efe65b96534b598c5588ce4fa010a021933f8"]
+paths = ['''^research/results/aegisai010\-local\-smoke/environment\.json$''']
+regexTarget = "line"
+regexes = ['''^[\r\n]*    "src/AegisAI\.Api/AegisAI\.Api\.csproj": "101a9f3d4ee2ddbc63eca3cac14d83f85ca8f5d012145ed2cbbe771fed448594",[\r\n]*$''']
+
+[[rules.allowlists]]
+description = "Verified source fingerprint 3; immutable historical occurrence only"
+condition = "AND"
+commits = ["ecb96495ba9da5fbff140e864b9d4d01b8497adb"]
+paths = ['''^research/results/aegisai009\-smoke/environment\.json$''']
+regexTarget = "line"
+regexes = ['''^[\r\n]*    "src/AegisAI\.Api/Authentication/AuthenticationSetup\.cs": "920195140de289a69c59f5193bd621f248b5fe499b693bedb250029aa127e0bf",[\r\n]*$''']
+
+[[rules.allowlists]]
+description = "Verified source fingerprint 4; immutable historical occurrence only"
+condition = "AND"
+commits = ["ecb96495ba9da5fbff140e864b9d4d01b8497adb"]
+paths = ['''^research/results/aegisai009\-smoke/environment\.json$''']
+regexTarget = "line"
+regexes = ['''^[\r\n]*    "src/AegisAI\.Application/Identity/AuthenticatedIdentity\.cs": "8dfa9b78b68eb8ddd6b8d9c5abfc1f004b2065ac6fa31a4d156cd39f9e0515de",[\r\n]*$''']
+
+[[rules.allowlists]]
+description = "Verified source fingerprint 5; immutable historical occurrence only"
+condition = "AND"
+commits = ["ecb96495ba9da5fbff140e864b9d4d01b8497adb"]
+paths = ['''^research/results/aegisai009\-smoke/environment\.json$''']
+regexTarget = "line"
+regexes = ['''^[\r\n]*    "tests/AegisAI\.IntegrationTests/AuthenticationTests\.cs": "683f57ca44999391fe28a8e4af147e7879288b8baaea6e69c2de36722837d3be",[\r\n]*$''']
+
+[[rules.allowlists]]
+description = "Verified source fingerprint 6; immutable historical occurrence only"
+condition = "AND"
+commits = ["98572c067b6084de0ee6fc30170c8dad10c79090"]
+paths = ['''^research/results/local\-validation/environment\.json$''']
+regexTarget = "line"
+regexes = ['''^[\r\n]*    "src/AegisAI\.Api/AegisAI\.Api\.csproj": "101a9f3d4ee2ddbc63eca3cac14d83f85ca8f5d012145ed2cbbe771fed448594",[\r\n]*$''']
+
+[[rules.allowlists]]
+description = "Verified source fingerprint 7; immutable historical occurrence only"
+condition = "AND"
+commits = ["98572c067b6084de0ee6fc30170c8dad10c79090"]
+paths = ['''^research/results/local\-validation/environment\.json$''']
+regexTarget = "line"
+regexes = ['''^[\r\n]*    "src/AegisAI\.Api/Authentication/AuthenticationSetup\.cs": "920195140de289a69c59f5193bd621f248b5fe499b693bedb250029aa127e0bf",[\r\n]*$''']
+
+[[rules.allowlists]]
+description = "Verified source fingerprint 8; immutable historical occurrence only"
+condition = "AND"
+commits = ["98572c067b6084de0ee6fc30170c8dad10c79090"]
+paths = ['''^research/results/local\-validation/environment\.json$''']
+regexTarget = "line"
+regexes = ['''^[\r\n]*    "src/AegisAI\.Application/Identity/AuthenticatedIdentity\.cs": "8dfa9b78b68eb8ddd6b8d9c5abfc1f004b2065ac6fa31a4d156cd39f9e0515de",[\r\n]*$''']
+
+[[rules.allowlists]]
+description = "Verified source fingerprint 9; immutable historical occurrence only"
+condition = "AND"
+commits = ["98572c067b6084de0ee6fc30170c8dad10c79090"]
+paths = ['''^research/results/local\-validation/environment\.json$''']
+regexTarget = "line"
+regexes = ['''^[\r\n]*    "tests/AegisAI\.IntegrationTests/AuthenticationTests\.cs": "683f57ca44999391fe28a8e4af147e7879288b8baaea6e69c2de36722837d3be",[\r\n]*$''']
+
+[[rules.allowlists]]
+description = "Verified source fingerprint 10; immutable historical occurrence only"
+condition = "AND"
+commits = ["415efe65b96534b598c5588ce4fa010a021933f8"]
+paths = ['''^research/results/aegisai010\-local\-smoke/environment\.json$''']
+regexTarget = "line"
+regexes = ['''^[\r\n]*    "src/AegisAI\.Api/Authentication/AuthenticationSetup\.cs": "920195140de289a69c59f5193bd621f248b5fe499b693bedb250029aa127e0bf",[\r\n]*$''']
+
+[[rules.allowlists]]
+description = "Verified source fingerprint 11; immutable historical occurrence only"
+condition = "AND"
+commits = ["415efe65b96534b598c5588ce4fa010a021933f8"]
+paths = ['''^research/results/aegisai010\-local\-smoke/environment\.json$''']
+regexTarget = "line"
+regexes = ['''^[\r\n]*    "src/AegisAI\.Application/Identity/AuthenticatedIdentity\.cs": "8dfa9b78b68eb8ddd6b8d9c5abfc1f004b2065ac6fa31a4d156cd39f9e0515de",[\r\n]*$''']
+
+[[rules.allowlists]]
+description = "Verified source fingerprint 12; immutable historical occurrence only"
+condition = "AND"
+commits = ["415efe65b96534b598c5588ce4fa010a021933f8"]
+paths = ['''^research/results/aegisai010\-local\-smoke/environment\.json$''']
+regexTarget = "line"
+regexes = ['''^[\r\n]*    "tests/AegisAI\.IntegrationTests/AuthenticationTests\.cs": "683f57ca44999391fe28a8e4af147e7879288b8baaea6e69c2de36722837d3be",[\r\n]*$''']
