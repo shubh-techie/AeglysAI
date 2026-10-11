@@ -1,4 +1,4 @@
-# AegisAI authorization experiments
+# AeglysAI authorization experiments
 
 **EXPERIMENTAL — synthetic data only.** Models A (RBAC), B (RBAC + ABAC), and C
 (RBAC + ABAC + deterministic contextual risk) are executable. Model D remains
@@ -18,7 +18,7 @@ repository root, with package restore access on the first build:
 dotnet restore
 dotnet build -c Release
 dotnet test -c Release
-dotnet run --project benchmarks/AegisAI.Experiments -c Release --no-build -- \
+dotnet run --project benchmarks/AeglysAI.Experiments -c Release --no-build -- \
   --manifest research/experiments/smoke-v1.json \
   --output research/results/my-smoke-run
 ```

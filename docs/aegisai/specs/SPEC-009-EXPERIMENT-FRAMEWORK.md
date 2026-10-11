@@ -6,9 +6,9 @@ Status: IMPLEMENTED experimental runner; synthetic fixtures only
 ## Scope
 
 Compare actual Model A/B/C implementations using a standalone net8.0 console
-project under benchmarks/AegisAI.Experiments. The runner references Application and
+project under benchmarks/AeglysAI.Experiments. The runner references Application and
 Infrastructure; production projects do not depend on it. Tests live in a separate
-Experiments.Tests project included in AegisAI.sln. Models and policies remain
+Experiments.Tests project included in AeglysAI.sln. Models and policies remain
 unchanged. Model D is PLANNED and cannot be selected/executed by this runner.
 
 Exact commands and artifact interpretation are in [research/README](../../../research/README.md).

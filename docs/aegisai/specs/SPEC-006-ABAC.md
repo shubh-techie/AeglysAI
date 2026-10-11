@@ -134,7 +134,7 @@ these endpoints must not be treated as production enforcement mechanisms.
 
 ## Configuration
 
-The unautoloaded `src/AegisAI.Api/appsettings.example.json` now contains a complete
+The unautoloaded `src/AeglysAI.Api/appsettings.example.json` now contains a complete
 synthetic Abac example alongside existing authentication and Rbac examples.
 `Abac:Version` identifies the combined rule/attribute snapshot. Configure:
 

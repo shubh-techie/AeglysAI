@@ -3,7 +3,7 @@ set -eu
 cd "$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
 export LOCAL_UID="$(id -u)" LOCAL_GID="$(id -g)"
 compose() { docker compose -f deployment/docker/compose.yaml "$@"; }
-tool() { compose run --rm --no-deps tools dotnet run --project deployment/docker/AegisAI.DevTools -- "$@"; }
+tool() { compose run --rm --no-deps tools dotnet run --project deployment/docker/AeglysAI.DevTools -- "$@"; }
 case "${1:-help}" in
   up)
     mkdir -p deployment/docker/.local research/results
@@ -23,14 +23,14 @@ case "${1:-help}" in
   test)
     mkdir -p deployment/docker/.local research/results
     compose build tools
-    compose run --rm --no-deps tools dotnet test AegisAI.sln -c Release
+    compose run --rm --no-deps tools dotnet test AeglysAI.sln -c Release
     ;;
   experiment)
     run_name="${2:-smoke-$(date -u +%Y%m%dT%H%M%SZ)}"
     case "$run_name" in *[!a-zA-Z0-9_-]*|'') echo 'Use a new run name containing letters, digits, hyphens or underscores.' >&2; exit 2 ;; esac
     mkdir -p deployment/docker/.local research/results
     compose build tools
-    compose run --rm --no-deps tools dotnet run --project benchmarks/AegisAI.Experiments -c Release -- --manifest research/experiments/smoke-v1.json --output "research/results/$run_name"
+    compose run --rm --no-deps tools dotnet run --project benchmarks/AeglysAI.Experiments -c Release -- --manifest research/experiments/smoke-v1.json --output "research/results/$run_name"
     ;;
   down) compose down ;;
   *) echo 'Usage: ./dev up | health | demo | logs | test | experiment [new-run-name] | down' ;;

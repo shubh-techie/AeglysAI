@@ -1,4 +1,4 @@
-title = "AegisAI secret detection (no historical exceptions)"
+title = "AeglysAI secret detection (no historical exceptions)"
 
 [extend]
 useDefault = true

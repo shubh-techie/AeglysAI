@@ -1,13 +1,20 @@
-# AegisAI
+# AeglysAI
 
 **Adaptive Intelligence for Secure Distributed Systems**
 
 Observe. Assess. Authorize. Respond.
 
+Website: [aeglysai.com](https://aeglysai.com) ·
+Repository: [shubh-techie/AeglysAI](https://github.com/shubh-techie/AeglysAI)
+
+The project was previously named AegisAI. See the
+[AEGLYSAI-013B migration guide](docs/aeglysai/AEGLYSAI-013B-NAMING-MIGRATION.md)
+for renamed build paths, compatibility identifiers and preserved historical records.
+
 **Under development — V0.1 experimental authorization platform.** A .NET 8 solution and minimal
 API expose `GET /health` and authenticated `GET /identity`; Models A/B/C have experimental authorization decision endpoints.
 
-AegisAI is intended to explore adaptive authorization, contextual risk assessment,
+AeglysAI is intended to explore adaptive authorization, contextual risk assessment,
 behavioral anomaly detection, and policy-controlled response in distributed systems.
 
 ## Status
@@ -38,8 +45,8 @@ container daemon. Initial builds download images/packages. Clone this repository
 using its hosting URL, then run from the clone root:
 
 ```sh
-git clone <repository-url> AegisAI
-cd AegisAI
+git clone https://github.com/shubh-techie/AeglysAI.git AeglysAI
+cd AeglysAI
 ./dev up                  # Build, generate temporary local credentials, start API
 ./dev health              # GET /health; also available at http://127.0.0.1:5080/health
 ./dev demo                # Exercise A/B/C and show decisions + audit correlation IDs
@@ -60,7 +67,7 @@ See [environment specification](docs/aegisai/specs/SPEC-010-V01-ENVIRONMENT.md),
 
 ## History
 
-This repository originated as **Securing-Microservices in 2022**. **AegisAI
+This repository originated as **Securing-Microservices in 2022**. **AeglysAI
 development begins in 2026**; no intervening activity is claimed. The old
 GloboTicket application is removed from the current working tree and will not be
 reused. Its historical commits remain recoverable at
@@ -75,7 +82,7 @@ See [project history](docs/aegisai/PROJECT_HISTORY.md) and the
 AGENTS.md                    Agent instructions and engineering rules
 docs/aegisai/
   PROJECT_HISTORY.md         Historical provenance
-  DEVELOPMENT_LOG.md         Chronological AegisAI development record
+  DEVELOPMENT_LOG.md         Chronological AeglysAI development record
   architecture/              Architecture documentation
   adr/                       Architecture decision records
   specs/                     Specifications
@@ -111,7 +118,7 @@ With a .NET 8 SDK installed, run from the repository root:
 dotnet restore
 dotnet build
 dotnet test
-dotnet run --project src/AegisAI.Api -- --urls http://localhost:5080
+dotnet run --project src/AeglysAI.Api -- --urls http://localhost:5080
 ```
 
 `GET http://localhost:5080/health` returns `{"status":"healthy"}`. This checks

@@ -1,14 +1,14 @@
-# AegisAI Agent Instructions
+# AeglysAI Agent Instructions
 
 Read this AGENTS.md before every future task and follow it throughout the work.
 
 ## Project identity
 
-AegisAI — Adaptive Intelligence for Secure Distributed Systems
+AeglysAI — Adaptive Intelligence for Secure Distributed Systems
 
 Observe. Assess. Authorize. Respond.
 
-Securing-Microservices is the historical 2022 project. AegisAI development begins
+Securing-Microservices is the historical 2022 project. AeglysAI development begins
 in 2026. The legacy application is not reused; new implementation starts fresh.
 
 ## Git history rules
@@ -18,7 +18,7 @@ in 2026. The legacy application is not reused; new implementation starts fresh.
 - Never change historical dates or authors.
 - Never delete, move, or replace `securing-microservices-legacy`.
 - Never force push.
-- Never imply AegisAI existed in 2022 or invent activity between 2022 and 2026.
+- Never imply AeglysAI existed in 2022 or invent activity between 2022 and 2026.
 - Keep the 2022 project recoverable from Git and the legacy tag.
 - Remove or replace legacy files only through current-branch changes; never alter historical commits.
 - Do not commit automatically. Stop for review when requested.

@@ -13,7 +13,7 @@ protected = ["patent-private/draft.md", "nested/private-research/model.cs",
              "nested/secrets.json", "nested/appsettings.Local.json",
              "research/results/local-fixture/summary.json", "docs/aegisai/research/fixture.md"]
 public = ["src/Public.cs", "docs/aegisai/specs/SPEC-PUBLIC.md", "research/experiments/public.json"]
-with tempfile.TemporaryDirectory(prefix="aegisai-context-test-") as temporary:
+with tempfile.TemporaryDirectory(prefix="aeglysai-context-test-") as temporary:
     private = Path(temporary)
     context, output = private / "context", private / "output"
     context.mkdir()

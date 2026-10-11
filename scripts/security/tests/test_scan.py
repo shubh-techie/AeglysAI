@@ -16,7 +16,7 @@ spec.loader.exec_module(scan)
 
 class GateTests(unittest.TestCase):
     def setUp(self):
-        self.temporary = tempfile.TemporaryDirectory(prefix="aegisai-gate-test-")
+        self.temporary = tempfile.TemporaryDirectory(prefix="aeglysai-gate-test-")
         self.addCleanup(self.temporary.cleanup)
         self.root = Path(self.temporary.name)
         self.git("init", "-q")
@@ -116,7 +116,7 @@ class GateTests(unittest.TestCase):
                 result = subprocess.run(["git", "check-ignore", "--no-index", "-q", name], cwd=self.root)
                 self.assertEqual(0, result.returncode)
         for name in [".env.example", "docs/aegisai/specs/SPEC-012-RESEARCH-DEFINITION.md",
-                     "src/AegisAI.Domain/Public.cs", "research/results/approved-synthetic/summary.json"]:
+                     "src/AeglysAI.Domain/Public.cs", "research/results/approved-synthetic/summary.json"]:
             with self.subTest(name=name):
                 result = subprocess.run(["git", "check-ignore", "--no-index", "-q", name], cwd=self.root)
                 self.assertEqual(1, result.returncode)

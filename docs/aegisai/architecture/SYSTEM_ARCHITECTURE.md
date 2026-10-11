@@ -1,4 +1,4 @@
-# AegisAI System Architecture
+# AeglysAI System Architecture
 
 Date: 2026-09-23  
 Status: PLANNED system design; IMPLEMENTED documentation
@@ -93,10 +93,10 @@ so direct service calls cannot bypass gateway decisions.
 
 ```mermaid
 flowchart LR
-    Api[AegisAI.Api] --> Application[AegisAI.Application]
-    Api --> Infrastructure[AegisAI.Infrastructure]
+    Api[AeglysAI.Api] --> Application[AeglysAI.Application]
+    Api --> Infrastructure[AeglysAI.Infrastructure]
     Infrastructure --> Application
-    Infrastructure --> Domain[AegisAI.Domain]
+    Infrastructure --> Domain[AeglysAI.Domain]
     Application --> Domain
 ```
 

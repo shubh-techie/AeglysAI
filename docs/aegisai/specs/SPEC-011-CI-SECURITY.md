@@ -1,5 +1,8 @@
 # SPEC-011 — GitHub CI and repository security baseline
 
+> Naming update (2026-10-11, AEGLYSAI-013B): The workflow and validation evidence below record the original task. Current CI uses `dotnet restore AeglysAI.sln`, `dotnet build AeglysAI.sln --configuration Release --no-restore`, and `dotnet test AeglysAI.sln --configuration Release --no-build --no-restore`.
+> See [migration guidance](../../aeglysai/AEGLYSAI-013B-NAMING-MIGRATION.md).
+
 Date: 2026-09-23  
 Task: AEGISAI-011  
 Status: **IMPLEMENTED** in working tree; pending review, not committed.

@@ -1,4 +1,4 @@
-name: CI
+name: AeglysAI CI
 
 on:
   pull_request:
@@ -26,10 +26,10 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore AegisAI.sln
+        run: dotnet restore AeglysAI.sln
 
       - name: Build Release
-        run: dotnet build AegisAI.sln --configuration Release --no-restore
+        run: dotnet build AeglysAI.sln --configuration Release --no-restore
 
       - name: Run all tests
-        run: dotnet test AegisAI.sln --configuration Release --no-build --no-restore
+        run: dotnet test AeglysAI.sln --configuration Release --no-build --no-restore
