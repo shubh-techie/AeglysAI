@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "data_kind": "SYNTHETIC",
+  "recognitions": [
+    {
+      "id": "synthetic-credit-001",
+      "contribution_reference": "https://example.invalid/synthetic/contribution",
+      "credit_mode": "artifact-only",
+      "contribution_accepted": true,
+      "consent": {
+        "state": "granted",
+        "scope": "public-attribution",
+        "review_reference": "https://example.invalid/synthetic/consent-review"
+      },
+      "publication": {
+        "state": "published",
+        "review_approved": true
+      },
+      "recorded_at": "2026-10-01T00:00:00Z"
+    }
+  ]
+}

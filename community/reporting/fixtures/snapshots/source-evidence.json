@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "data_kind": "SYNTHETIC",
+  "metrics": [
+    {
+      "id": "synthetic-level-1",
+      "level": 1,
+      "definition": "Synthetic demonstration of level 1; not an observed community result.",
+      "unit": "views",
+      "count": 3,
+      "source": {
+        "kind": "synthetic",
+        "reference": "https://example.invalid/synthetic/aggregate",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "period": {
+        "start": "2026-10-01T00:00:00Z",
+        "end": "2026-10-02T00:00:00Z"
+      },
+      "deduplication": {
+        "method": "Synthetic aggregate: exclude two repeated fixture observations.",
+        "unit": "One synthetic unit within the period.",
+        "raw_count": 5,
+        "excluded_count": 2
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Validate fixture structure and arithmetic; no independent real-world evidence.",
+        "review_reference": "https://example.invalid/synthetic/review"
+      },
+      "limitations": [
+        "Demonstration only; zero real community impact is established."
+      ]
+    },
+    {
+      "id": "synthetic-level-2",
+      "level": 2,
+      "definition": "Synthetic demonstration of level 2; not an observed community result.",
+      "unit": "unique-interests",
+      "count": 3,
+      "source": {
+        "kind": "synthetic",
+        "reference": "https://example.invalid/synthetic/aggregate",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "period": {
+        "start": "2026-10-01T00:00:00Z",
+        "end": "2026-10-02T00:00:00Z"
+      },
+      "deduplication": {
+        "method": "Synthetic aggregate: exclude two repeated fixture observations.",
+        "unit": "One synthetic unit within the period.",
+        "raw_count": 5,
+        "excluded_count": 2
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Validate fixture structure and arithmetic; no independent real-world evidence.",
+        "review_reference": "https://example.invalid/synthetic/review"
+      },
+      "limitations": [
+        "Demonstration only; zero real community impact is established."
+      ]
+    },
+    {
+      "id": "synthetic-level-3",
+      "level": 3,
+      "definition": "Synthetic demonstration of level 3; not an observed community result.",
+      "unit": "participants",
+      "count": 3,
+      "source": {
+        "kind": "synthetic",
+        "reference": "https://example.invalid/synthetic/aggregate",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "period": {
+        "start": "2026-10-01T00:00:00Z",
+        "end": "2026-10-02T00:00:00Z"
+      },
+      "deduplication": {
+        "method": "Synthetic aggregate: exclude two repeated fixture observations.",
+        "unit": "One synthetic unit within the period.",
+        "raw_count": 5,
+        "excluded_count": 2
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Validate fixture structure and arithmetic; no independent real-world evidence.",
+        "review_reference": "https://example.invalid/synthetic/review"
+      },
+      "limitations": [
+        "Demonstration only; zero real community impact is established."
+      ]
+    },
+    {
+      "id": "synthetic-level-4",
+      "level": 4,
+      "definition": "Synthetic demonstration of level 4; not an observed community result.",
+      "unit": "accepted-contributions",
+      "count": 3,
+      "source": {
+        "kind": "synthetic",
+        "reference": "https://example.invalid/synthetic/aggregate",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "period": {
+        "start": "2026-10-01T00:00:00Z",
+        "end": "2026-10-02T00:00:00Z"
+      },
+      "deduplication": {
+        "method": "Synthetic aggregate: exclude two repeated fixture observations.",
+        "unit": "One synthetic unit within the period.",
+        "raw_count": 5,
+        "excluded_count": 2
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Validate fixture structure and arithmetic; no independent real-world evidence.",
+        "review_reference": "https://example.invalid/synthetic/review"
+      },
+      "limitations": [
+        "Demonstration only; zero real community impact is established."
+      ]
+    },
+    {
+      "id": "synthetic-level-5",
+      "level": 5,
+      "definition": "Synthetic demonstration of level 5; not an observed community result.",
+      "unit": "independent-reproductions",
+      "count": 3,
+      "source": {
+        "kind": "synthetic",
+        "reference": "https://example.invalid/synthetic/aggregate",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "period": {
+        "start": "2026-10-01T00:00:00Z",
+        "end": "2026-10-02T00:00:00Z"
+      },
+      "deduplication": {
+        "method": "Synthetic aggregate: exclude two repeated fixture observations.",
+        "unit": "One synthetic unit within the period.",
+        "raw_count": 5,
+        "excluded_count": 2
+      },
+      "verification": {
+        "status": "draft",
+        "method": "Validate fixture structure and arithmetic; no independent real-world evidence.",
+        "review_reference": "https://example.invalid/synthetic/review"
+      },
+      "limitations": [
+        "Demonstration only; zero real community impact is established."
+      ]
+    }
+  ]
+}

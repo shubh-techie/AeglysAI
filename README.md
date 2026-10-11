@@ -195,3 +195,11 @@ AEGISAI-012 defines the [research program](docs/aegisai/research/RESEARCH_PROGRA
 PLANNED RESEARCH. The proposed contribution is subject to literature and prior-art
 review; no effectiveness, novelty or patentability is established. Consult the
 [claims register](docs/aegisai/research/CLAIMS_REGISTER.md) before public claims.
+
+
+## Community participation
+
+See [community documentation](community/README.md), [contribution process](CONTRIBUTING.md)
+and [code of conduct](CODE_OF_CONDUCT.md). Community claims follow the versioned
+[evidence standard](community/evidence/README.md). Synthetic examples establish no
+real adoption or impact. The roadmap identifies separate dependent work packages.
