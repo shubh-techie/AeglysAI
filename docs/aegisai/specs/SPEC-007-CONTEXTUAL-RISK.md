@@ -148,7 +148,7 @@ and Model C orchestration. Infrastructure stores immutable request-bound context
 Api binds configuration, composes services, and serializes responses. Inner layers
 have no HTTP or identity-provider dependency.
 
-`src/AegisAI.Api/appsettings.example.json` includes a synthetic ContextualRisk
+`src/AeglysAI.Api/appsettings.example.json` includes a synthetic ContextualRisk
 section. As before, the example file is not automatically loaded. Configure:
 
 - ContextualRisk:Version — required when configured; covers all fixture inputs.

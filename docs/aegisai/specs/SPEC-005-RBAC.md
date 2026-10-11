@@ -131,7 +131,7 @@ resource is read or modified. `/health` and `/identity` retain their behavior.
 
 ## Configuration and exercising the endpoint
 
-The example in src/AegisAI.Api/appsettings.example.json includes:
+The example in src/AeglysAI.Api/appsettings.example.json includes:
 
 ```json
 {

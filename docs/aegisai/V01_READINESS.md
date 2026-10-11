@@ -1,5 +1,8 @@
 # AegisAI V0.1 readiness report
 
+> Naming update (2026-10-11, AEGLYSAI-013B): The official current name is **AeglysAI**. This report preserves the original V0.1 title, task identifiers and observed results; it is not a new readiness assessment.
+> See [migration guidance](../aeglysai/AEGLYSAI-013B-NAMING-MIGRATION.md).
+
 Date: 2026-09-23  
 Assessment: **Ready for code review as an experimental local development baseline.**
 Docker startup and /health are now validated as recorded below. Full container

@@ -1,5 +1,8 @@
 # SPEC-002 — Solution Foundation
 
+> Naming update (2026-10-11, AEGLYSAI-013B): The project and solution names below record the original foundation task. Current names use AeglysAI: open `AeglysAI.sln` and use `src/AeglysAI.*` and `tests/AeglysAI.*` project paths.
+> See [migration guidance](../../aeglysai/AEGLYSAI-013B-NAMING-MIGRATION.md).
+
 Date: 2026-09-23  
 Task: AEGISAI-002  
 Status: IMPLEMENTED; pending review

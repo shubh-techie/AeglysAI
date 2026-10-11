@@ -1,5 +1,8 @@
 # SPEC-003 — AegisAI Research and System Architecture
 
+> Naming update (2026-10-11, AEGLYSAI-013B): The official current name is **AeglysAI**. The original title, task identifier and historical scope below are preserved as a dated architectural record.
+> See [migration guidance](../../aeglysai/AEGLYSAI-013B-NAMING-MIGRATION.md).
+
 Date: 2026-09-23  
 Task: AEGISAI-003  
 Status: IMPLEMENTED documentation; system capabilities PLANNED

@@ -584,3 +584,14 @@ Status: **IMPLEMENTED / TESTED** in the working tree; pending review, not commit
 - The current guide, exact inventory and compatibility transitions are in
   [the migration report](../aeglysai/AEGLYSAI-013B-NAMING-MIGRATION.md).
   No commit, push, merge, PR creation, history rewrite or Model D work performed.
+
+
+## 2026-10-11 — AEGLYSAI-013B naming verification follow-up
+
+**IMPLEMENTED / TESTED:** verified all five READMEs and current project naming;
+corrected four operational specification paths and added four historical-name
+transition notes. Restore/build and all 168 .NET tests passed; 16 security tests,
+five Compose compatibility tests, Compose configuration, local links and diff
+checks passed. Full tracked/history scans still fail on existing AEGISAI-013
+findings; no suppression or clearance is claimed. No commit/push or Model D work.
+See [follow-up inventory and validation](../aeglysai/AEGLYSAI-013B-NAMING-RECHECK.md).
