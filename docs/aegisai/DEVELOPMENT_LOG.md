@@ -496,3 +496,54 @@ tree; pending review, not committed. Model D remains **PLANNED RESEARCH**.
 
 **EXPERIMENTAL**: existing A–C synthetic artifacts only; no new research evidence.
 **PLANNED**: literature-gap/prior-art review and subsequent Model D research.
+
+## 2026-10-11 — AEGISAI-013: Repository security and disclosure protection
+
+Status: safeguards **IMPLEMENTED / TESTED** locally, pending review and uncommitted.
+Confidentiality audit **NOT CLEARED**; related publication stopped. Model D and
+AEGISAI-014–024 remain **PLANNED**, not started.
+
+- Began from clean main at 37f37d9. Read AGENTS.md and inspected history,
+  specifications, ADRs, research, A–C source, API boundaries, tests, benchmark
+  snapshot behavior, Docker configuration and ignores. All 27 locally reachable
+  commits were scanned; no remote fetch or settings change was performed.
+- Verified AEGISAI-012 definitions/completion are committed and merged. All eleven
+  canonical research files remain byte-identical to research-baseline-v0.1.
+- Preserved existing ignore rules; added narrow private-material, credential and
+  local-evidence guards. Docker additionally excludes invention-oriented prose.
+  Tracked files and bind mounts are not protected by these ignore rules.
+- Added checksum-verified Gitleaks 8.30.1 installation, default-rule extension,
+  staged/tracked/history scans, confidentiality path/marker checks, a supplied
+  opt-in pre-commit hook and fail-closed read-only CI with no report upload.
+- Exact staged blobs are scanned in protected temporary external storage;
+  only paths/short commit references leave the scanner. Missing, wrong or failing
+  tooling fails closed. No blanket historical exception was introduced.
+- Existing invention-oriented documents, historical credential candidates and
+  local/environment artifacts require private human triage. No values, claims
+  or unpublished algorithms were copied into new public documentation.
+- Added generic disclosure policy, SPEC-013 baseline/audit/checklist and ADR-007;
+  updated README status and supplied a protected external redacted evidence
+  inventory. No raw-secret or private invention document was created.
+- Validation: restore passed with permitted tooling access after a sandboxed
+  attempt stalled and was stopped; Release build passed with zero warnings/errors;
+  all 168 .NET tests passed (14 Domain, 53 Application, 93 integration/security,
+  4 architecture, 4 experiments), zero failed/skipped. SDK 8.0.204, macOS arm64.
+- Security tests: 16 passed using actual Gitleaks. A local scratch Docker build
+  verified 19 protected synthetic fixtures excluded and three public fixtures
+  retained. Tracked/history gates returned exit 1 for existing findings. Empty
+  actual staged check passed; it does not certify unstaged changes.
+- All 15 proposed files passed both staged gates in a disposable repository;
+  the real index remains untouched. YAML parsing/structure, shell syntax, local
+  Markdown links/fences, changed-file whitespace and git diff --check passed.
+- Existing integration logs retain local Data Protection notices and expected
+  invalid-request rejection diagnostics. No production storage guarantee follows.
+- Hosted workflow execution, required-check enforcement, credential revocation,
+  disclosure clearance and comprehensive coverage remain **NOT VERIFIED**.
+  No new research experiment or Model D result was produced.
+- Git history/tags and canonical research remain unchanged. No repository commit,
+  push, PR, upload, remote modification, hook installation or destructive action.
+  Fixture tests use disposable local repositories only.
+
+Phase 1 cannot be marked cleared while the audit gates fail. Owner/counsel review
+and approved remediation are the continuation gate; the remaining phases and
+private implementation gaps are recorded in SPEC-013 without disclosing mechanisms.
