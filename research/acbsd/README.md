@@ -58,3 +58,14 @@ See [SPEC-019](../../docs/aeglysai/specs/SPEC-019-SYNTHETIC-BEHAVIORAL-DATASET.m
 [roadmap](ROADMAP.md), [traceability](TRACEABILITY.md) and
 [actual validation](VALIDATION.md). All existing disclosure gates still apply;
 public-safe synthetic inputs do not clear the repository's historical findings.
+
+## DATA-002 completed local evaluation
+
+A 50,000-window synthetic run, physical split exports, actual three-model results,
+recommendation comparisons, failure records and security status are in the
+[DATA-002 report](DATA002_REPORT.md). Its commands use `--split chronological`
+with two 60-second boundary gaps; random remains the backwards-compatible default.
+Use `python3 -m research.acbsd.splits --dataset DATASET --output NEW_DIRECTORY`
+to export verified partitions. Large datasets/predictions remain local and ignored.
+The small [evidence bundle](../results/acbsd-data002-evidence/README.md) contains
+checksums and summaries only. Historical publication blockers remain unresolved.

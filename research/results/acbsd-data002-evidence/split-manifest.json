@@ -1,0 +1,57 @@
+{
+  "dataset_manifest_sha256": "419ebee7c38e28f50b1157a62dba7d8b0979a6abae2541815ce282deb6599e38",
+  "partitions": {
+    "holdout": {
+      "files": {
+        "holdout-events.jsonl": {
+          "bytes": 1541708,
+          "sha256": "0917939ea032f7136e5749005854c7ae86beb37dbc2313df25f9301fb5bee681"
+        },
+        "holdout-ground_truth.jsonl": {
+          "bytes": 580580,
+          "sha256": "371f82c79d0b35d6fbe28022c13cc4109b8292847344d1fa02d2772aa9733993"
+        }
+      },
+      "rows": 4060
+    },
+    "test": {
+      "files": {
+        "test-events.jsonl": {
+          "bytes": 3498806,
+          "sha256": "fd875e41b447b9570843dfb1046e7b8a548c2279a6677ea5bd6acc22635cb1a4"
+        },
+        "test-ground_truth.jsonl": {
+          "bytes": 1215005,
+          "sha256": "8c8b6db091f4d469ea4cd019c2adb47c989e880d7915cb1bc1fafaad204300eb"
+        }
+      },
+      "rows": 9240
+    },
+    "train": {
+      "files": {
+        "train-events.jsonl": {
+          "bytes": 10443578,
+          "sha256": "7d2f80fc02350730cffa657df91d886d0283178c79e806127859b558d42a9b59"
+        },
+        "train-ground_truth.jsonl": {
+          "bytes": 3651595,
+          "sha256": "bcdadcb68e40746c1746c0b86bf21aa2a39c79915cdfd42778eded54b8610234"
+        }
+      },
+      "rows": 27565
+    },
+    "validation": {
+      "files": {
+        "validation-events.jsonl": {
+          "bytes": 3460423,
+          "sha256": "5f319d5fd6aa2f9a06a7c710ecbe49354960c74d38c423e1393c5f796f5689bd"
+        },
+        "validation-ground_truth.jsonl": {
+          "bytes": 1255045,
+          "sha256": "2412daba528ebd1fad0ad27d3302377cd7f32461d091c55295bfff3510f4561f"
+        }
+      },
+      "rows": 9135
+    }
+  }
+}

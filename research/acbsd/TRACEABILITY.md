@@ -22,3 +22,10 @@
 Tests live in [tests](tests). Exact outcomes, setup failures and runtimes are in
 [VALIDATION](VALIDATION.md). Passing correctness tests does not establish synthetic
 representativeness, operational safety, paper hypotheses or disclosure clearance.
+
+## DATA-002 follow-up
+
+See the [DATA-002 report](DATA002_REPORT.md) for the audited 50k generation,
+chronological boundary protection, exports, actual benchmarks, recommendation
+comparison, retained failures and security results. DATA-001's record above is
+historical; DATA-002 does not claim real-cloud or Model D production readiness.

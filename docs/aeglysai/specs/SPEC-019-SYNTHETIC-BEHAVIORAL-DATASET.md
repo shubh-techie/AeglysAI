@@ -82,3 +82,19 @@ Reproduction, interpretation and acceptance evidence:
 [validation](../../../research/acbsd/VALIDATION.md).
 Existing [SPEC-013](../../aegisai/specs/SPEC-013-DISCLOSURE-PROTECTION.md) remains
 binding. No new confidential authorization, orchestration or rollback is specified.
+
+## DATA-002 acceptance evidence — 2026-10-13
+
+**IMPLEMENTED** optional `--split chronological`: instance-position 60/20/20,
+holdout-family exclusion, two 60-second inserted gaps and strict >60-second
+train/validation/test separation. Duration must exceed 120 seconds. Related bursts
+never cross partitions. Default random generation and old manifests remain usable.
+Quality 1.1.0 reports repeated feature payloads; equal feature values at distinct
+timestamps are valid, while identifiers and timestamps must remain unique/ordered.
+`splits` exports independently verified event/truth JSONL per partition and hashes.
+
+**EXPERIMENTAL** 50,000-window seed-42 benchmark and post-inference synthetic
+recommendation-policy comparison completed; see the [evidence report](../../../research/acbsd/DATA002_REPORT.md).
+Tests cover temporal-boundary violations, full-volume generation, lossless exports
+and recommendation errors/consistency. No raw Kubernetes audit events, long-lived
+sessions, entity-disjoint evaluation or production Model D implementation is claimed.

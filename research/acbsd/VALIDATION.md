@@ -84,3 +84,10 @@ contain paths only and stay in temporary local storage; no matched content is ex
 The package does not modify AeglysAI-Portal, production .NET source, legacy history,
 private mechanisms or real data. See [dataset card](DATASET_CARD.md) and
 [methodology](METHODOLOGY.md) for representativeness, leakage and research-question limits.
+
+## DATA-002 follow-up
+
+See the [DATA-002 report](DATA002_REPORT.md) for the audited 50k generation,
+chronological boundary protection, exports, actual benchmarks, recommendation
+comparison, retained failures and security results. DATA-001's record above is
+historical; DATA-002 does not claim real-cloud or Model D production readiness.

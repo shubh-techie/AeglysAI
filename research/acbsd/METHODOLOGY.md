@@ -23,8 +23,8 @@ anomaly family. The manifest contains actual sizes, labels and family counts.
 Entity and temporal ranges overlap between partitions. Identifiers and timestamps
 are excluded from features, but correlated distributions can still inflate results.
 Instances are asserted independent by construction, not verified against real data.
-There is no claim of future-time or unseen-entity generalization. A chronological,
-entity-disjoint evaluation and overlapping real-window leakage analysis are planned.
+There is no claim of future-time or unseen-entity generalization. DATA-001 used random grouping. DATA-002 implements chronological boundaries;
+entity-disjoint evaluation and real-window leakage analysis remain planned.
 Scenario fields are provenance only; no grouping/label column goes into inference.
 
 ## Features and models
@@ -108,3 +108,29 @@ software evaluation, not an A–D authorization comparison or evidence ablation.
 gets only narrow scoring latency and false-positive costs. RQ2 policy safety and RQ3
 resilience require separate future, approved protocols and remain unanswered. The
 paper's full incident-response and operational effectiveness claims are unsupported.
+
+## DATA-002 protocol extension (exploratory)
+
+The [completed report](DATA002_REPORT.md) specifies the actual 50k run. Optional
+chronological mode assigns instance positions to 60/20/20, removes the holdout
+family and inserts two 60-second gaps within the configured duration. Duration must
+exceed 120 seconds. Validators enforce more than 60 seconds between train/validation
+and validation/test endpoints, preventing overlap of their illustrative trailing
+windows. The holdout spans the horizon but is excluded from all fitting/calibration.
+Independent instances may reuse entities; raw continuous sessions are not modeled.
+
+Repeated feature values at distinct timestamps are permitted and counted in quality
+report 1.1.0; duplicate identifiers and non-increasing timestamps remain rejected.
+No artificial jitter was added to force feature uniqueness. Random-mode output and
+the existing sample remain backwards-compatible. This correction was prompted by
+the failed 50k generation, before the first successful 50k benchmark.
+
+Recommendation evaluation compares actual outputs with a declared evaluation-only
+binary policy: benign monitor; anomalies escalate for criticality 1, review for 2/3.
+Labels are consumed after inference. This measures detection plus policy alignment,
+not independent expert severity, intervention outcomes or response safety. Repeat
+consistency and per-family alignment are reported separately from graded fixtures.
+Model inference and all hyperparameters are unchanged from DATA-001. Final window
+gaps were added after the preliminary exploratory benchmark; both runs are retained,
+and identical detection metrics result because features/partition membership are
+unchanged. This is not a preregistered confirmatory experiment.

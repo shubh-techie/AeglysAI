@@ -63,7 +63,12 @@ class DatasetTests(unittest.TestCase):
                 self.assert_bad(edit)
         def duplicate(e, t, c):
             e[1].update({k: v for k, v in e[0].items() if k not in ('event_id', 'timestamp')})
-        self.assert_bad(duplicate)
+        data = copy.deepcopy(self.data)
+        duplicate(*data)
+        validate(*data)  # Equal features at distinct timestamps are valid observations.
+        data[0][1]['timestamp'] = data[0][0]['timestamp']
+        with self.assertRaisesRegex(ValueError, 'timestamp'):
+            validate(*data)
 
     def test_tamper_and_no_overwrite(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -88,3 +93,31 @@ class DatasetTests(unittest.TestCase):
             p.write_text(json.dumps(catalog))
             with self.assertRaises(ValueError):
                 generate(scenario_path=p)
+
+    def test_chronological_split_and_temporal_mutation(self):
+        data = generate(volume=1000, split='chronological')
+        events, truth, _ = data
+        times = {p: [e['timestamp'] for e, t in zip(events, truth) if t['partition'] == p]
+                 for p in ('train', 'validation', 'test')}
+        self.assertLess(max(times['train']), min(times['validation']))
+        self.assertLess(max(times['validation']), min(times['test']))
+        from datetime import datetime
+        for left, right in [('train', 'validation'), ('validation', 'test')]:
+            self.assertGreater((datetime.fromisoformat(min(times[right])) -
+                                datetime.fromisoformat(max(times[left]))).total_seconds(), 60)
+        with tempfile.TemporaryDirectory() as directory:
+            write_dataset(Path(directory)/'data', *data)
+            self.assertEqual(verify(Path(directory)/'data')['rows'], 1000)
+        group = next(t['instance_id'] for t in truth if t['partition'] == 'train')
+        for t in truth:
+            if t['instance_id'] == group:
+                t['partition'] = 'test'
+        with self.assertRaisesRegex(ValueError, 'temporal leakage'):
+            validate(*data)
+
+    def test_research_volume_accepts_repeated_features(self):
+        events, truth, config = generate(volume=50000, identities=100, workloads=40,
+                                         duration=604800, split='chronological')
+        quality = validate(events, truth, config)
+        self.assertEqual(quality['rows'], 50000)
+        self.assertGreater(quality['repeated_feature_payloads'], 0)

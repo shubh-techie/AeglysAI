@@ -15,7 +15,7 @@ from sklearn.metrics import (auc, average_precision_score, confusion_matrix,
 from sklearn.preprocessing import StandardScaler
 
 from .dataset import FEATURES, PARTITIONS, digest, encode, load_dataset, source_hashes
-from .risk import expectation_check, recommend
+from .risk import evaluate_recommendations, expectation_check, recommend
 
 
 def features(events):
@@ -146,14 +146,18 @@ def run(dataset, output, seed=42, bootstrap=200):
                 local = [i for i, t in enumerate(labels) if t['family'] == family]
                 summary['per_scenario'][family] = metrics(y[np.asarray(ids)[local]], scores[local], threshold)
             recommendations = []
+            recommendation_records = []
             for local, index in enumerate(ids):
                 # Binary evidence is deliberately transparent, not a calibrated probability.
                 evidence = float(scores[local] >= threshold)
                 recommendation = recommend(evidence, events[index]['asset_criticality'])
                 recommendations.append(recommendation['recommendation'])
+                recommendation_records.append(recommendation)
                 raw.append(dict(event_id=events[index]['event_id'], model=name, partition=partition,
                                 score=float(scores[local]), threshold=threshold, flagged=bool(evidence),
                                 recommendation=recommendation))
+            summary['recommendation_evaluation'] = evaluate_recommendations(
+                [events[i] for i in ids], labels, recommendation_records)
             summary['recommendation_distribution'] = dict(Counter(recommendations))
             model_result['partitions'][partition] = summary
         result['models'][name] = model_result

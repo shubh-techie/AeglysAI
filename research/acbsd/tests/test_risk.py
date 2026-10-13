@@ -24,3 +24,15 @@ class RiskTests(unittest.TestCase):
                       (1.1,1,True), (.5,0,True), (.5,True,True), (.5,1,False)]:
             with self.assertRaises(ValueError):
                 recommend(e,c,v)
+
+    def test_evaluation_records_wrong_and_consistent_recommendations(self):
+        from research.acbsd.risk import evaluate_recommendations
+        events = [{'asset_criticality': 1}, {'asset_criticality': 3}]
+        truth = [{'family': 'normal_api', 'anomaly': False},
+                 {'family': 'failed_auth', 'anomaly': True}]
+        result = evaluate_recommendations(events, truth, [recommend(1, 1), recommend(1, 3)])
+        self.assertEqual(result['alignment'], .5)
+        self.assertEqual(result['repeat_consistency'], 1)
+        self.assertEqual(result['per_scenario']['normal_api']['aligned'], 0)
+        with self.assertRaises(ValueError):
+            evaluate_recommendations(events, truth, [])
