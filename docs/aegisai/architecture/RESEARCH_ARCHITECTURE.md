@@ -12,7 +12,9 @@ IMPLEMENTED: [SPEC-009](../specs/SPEC-009-EXPERIMENT-FRAMEWORK.md) provides synt
 scenarios and an executable A–C engine-only runner. An initial smoke run is stored
 under research/results/aegisai009-smoke. It does not establish improvement.
 PLANNED: Model D, production-representative datasets, detection evaluation, full
-pipeline measurements, trained models, and publications.
+pipeline measurements, production models, and publications.
+AEGLYSAI-DATA-001 (2026-10-13) adds the isolated synthetic evaluation described
+in the amendment below; live and Model D pipelines remain PLANNED.
 
 AEGISAI-012 (2026-09-25) establishes the [research-definition baseline](../research/RESEARCH_PROGRAM.md),
 [RQ1–RQ4](../research/RESEARCH_QUESTION.md), [H1–H4](../research/RESEARCH_HYPOTHESES.md),
@@ -158,3 +160,29 @@ production security from a controlled experiment.
 
 See [Threat Model V1](../threat-model/THREAT_MODEL_V1.md) for adversarial risks and
 [System Architecture](SYSTEM_ARCHITECTURE.md) for decision and enforcement semantics.
+
+## 2026-10-13 — implemented offline synthetic behavioral pipeline
+
+[ACBSD](../../../research/acbsd/README.md) adds a public-safe offline subset of
+behavioral research. It remains independent of the .NET authorization graph.
+
+```mermaid
+flowchart LR
+    Catalogue[Versioned synthetic catalogue and seed] --> Generator[Correlated observation windows]
+    Generator --> Events[Events JSONL without labels]
+    Generator --> Truth[Independent ground truth and grouped partitions]
+    Events --> Validate[Schema and integrity verification]
+    Truth --> Validate
+    Validate --> Fit[Train-only transformations and baselines]
+    Fit --> Threshold[Validation-only threshold selection]
+    Threshold --> Evaluate[Test and scenario-family holdout]
+    Evaluate --> Evidence[Flagged synthetic anomaly evidence]
+    Evidence --> Recommend[Offline review recommendations with asset context]
+```
+
+Dataset card, protocol, known temporal/entity overlap, actual results and source
+snapshots are linked from the package. This randomized grouped split is not the
+future time/entity-disjoint pipeline above. There is no inference serving adapter,
+response execution, runtime feedback, authorization integration or live context.
+Synthetic quality metrics are now EXPERIMENTAL; complete adaptive evaluation remains
+PLANNED. See [SPEC-019](../../aeglysai/specs/SPEC-019-SYNTHETIC-BEHAVIORAL-DATASET.md).

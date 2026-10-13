@@ -2,7 +2,7 @@
 
 ## Result
 
-Five language-neutral beginner tracks; integration optional; Synthetic inputs and acceptance/negative tests; README/submission/reproduction/safety templates; Usable links, no complete solution.
+Six language-neutral beginner tracks; integration optional; Synthetic inputs and acceptance/negative tests; README/submission/reproduction/safety templates; Usable links, no complete solution.
 
 This change supplies repository documentation and offline validation, not a live
 service or proof of real community outcomes. Fixtures are explicitly synthetic.
@@ -31,6 +31,6 @@ Proposed commit: `feat(hackathon): COM-003A define qualification and team submis
 
 ## Final review and participation amendment
 
-Proposed PR title: COM-003A: Define mandatory qualification and five-track hackathon contracts.
+Proposed PR title: COM-003A: Define mandatory qualification and six-track hackathon contracts.
 
 Mandatory individual qualification for every member; teams of 1–4 with one lead and private roster approval; executable, reproducible prototypes; accessible two-minute video links; unchanged two-round rubrics; separate judging/publication consent. All existing schemas stay at 1.0.0. Event-stage reporting needs a separately versioned extension before Portal consumption. Task tests pass locally; full repository publication gates remain blocked. No PR, commit or push is authorized by this review.

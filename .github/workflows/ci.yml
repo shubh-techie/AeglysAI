@@ -51,3 +51,21 @@ jobs:
         run: python -m unittest discover -s scripts/community/tests -v
       - name: Check documentation targets
         run: python scripts/community/check_docs.py
+
+  synthetic-behavioral-research:
+    name: Synthetic behavioral research
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned research dependencies
+        run: python -m pip install -r research/acbsd/requirements.txt
+      - name: Test generator, leakage, models and recommendations
+        run: python -m unittest discover -s research/acbsd/tests -v
+      - name: Verify synthetic example
+        run: python -m research.acbsd.verify research/acbsd/examples/smoke-v1

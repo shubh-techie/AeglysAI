@@ -1,9 +1,10 @@
 # AeglysAI authorization experiments
 
 **EXPERIMENTAL — synthetic data only.** Models A (RBAC), B (RBAC + ABAC), and C
-(RBAC + ABAC + deterministic contextual risk) are executable. Model D remains
-**PLANNED**; no behavioral detector exists. This framework does not measure false
-positives, false negatives, or behavioral detection quality yet.
+(RBAC + ABAC + deterministic contextual risk) are executable. Model D authorization remains
+**PLANNED**. This A–C runner does not measure behavioral detection quality.
+[ACBSD](acbsd/README.md) separately implements an **EXPERIMENTAL**, public-safe
+synthetic behavioral benchmark; it does not implement Model D authorization.
 
 ## Reproduce the smoke experiment
 
@@ -110,3 +111,10 @@ with [environment metadata](results/aegisai009-smoke/environment.json) and raw
 observations alongside it. This run used uncommitted source captured in source.zip.
 Measured windows total less than 5 ms per model; use these values only to verify
 that the framework executes and produces inspectable artifacts.
+
+## Public-safe behavioral research
+
+See [ACBSD](acbsd/README.md) for synthetic event generation, independent labels,
+grouped splits, deterministic/Random Forest/Isolation Forest baselines and offline
+risk recommendations. [Actual validation](acbsd/VALIDATION.md) records observed
+results and limitations; existing publication gates remain binding.

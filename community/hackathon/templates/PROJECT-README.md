@@ -1,6 +1,6 @@
 # Your project title
 
-Track: choose a track from the AeglysAI five-track offering.
+Track: choose a track from the AeglysAI six-track offering.
 Status: IMPLEMENTED / TESTED / EXPERIMENTAL / PLANNED, with evidence.
 
 ## Goal and approach

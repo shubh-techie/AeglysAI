@@ -1,0 +1,1245 @@
+{
+  "bootstrap": {
+    "interval": "percentile 95%; fixed fitted model/threshold",
+    "repetitions": 200,
+    "seed": 42,
+    "unit": "scenario instance"
+  },
+  "commit": "70dd66c4df3540b0b47d5b229b744131d351b8d0",
+  "data_kind": "SYNTHETIC",
+  "dataset_config": {
+    "data_kind": "SYNTHETIC",
+    "duration_seconds": 86400,
+    "holdout": "workload_communication",
+    "identities": 20,
+    "scenario_sha256": "0bcf583d68ed108acbd462f2c303808338ff741f9f29346bc5264294332633fa",
+    "scenarios": {
+      "families": {
+        "api_frequency": {
+          "anomaly": true,
+          "category": "api",
+          "failure": [
+            0,
+            0.15
+          ],
+          "novelty": [
+            0,
+            0.2
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.08,
+          "rate": [
+            80,
+            900
+          ],
+          "scheduled": false
+        },
+        "failed_auth": {
+          "anomaly": true,
+          "category": "authentication",
+          "failure": [
+            0.35,
+            1
+          ],
+          "novelty": [
+            0,
+            0.2
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.08,
+          "rate": [
+            10,
+            90
+          ],
+          "scheduled": false
+        },
+        "normal_api": {
+          "anomaly": false,
+          "category": "api",
+          "failure": [
+            0,
+            0.1
+          ],
+          "novelty": [
+            0,
+            0.15
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.2,
+          "rate": [
+            10,
+            100
+          ],
+          "scheduled": false
+        },
+        "normal_auth": {
+          "anomaly": false,
+          "category": "authentication",
+          "failure": [
+            0,
+            0.1
+          ],
+          "novelty": [
+            0,
+            0.15
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.2,
+          "rate": [
+            1,
+            15
+          ],
+          "scheduled": false
+        },
+        "normal_workload": {
+          "anomaly": false,
+          "category": "workload",
+          "failure": [
+            0,
+            0.1
+          ],
+          "novelty": [
+            0,
+            0.15
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.2,
+          "rate": [
+            10,
+            100
+          ],
+          "scheduled": false
+        },
+        "operational_surge": {
+          "anomaly": false,
+          "category": "api",
+          "failure": [
+            0,
+            0.15
+          ],
+          "novelty": [
+            0,
+            0.2
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.08,
+          "rate": [
+            80,
+            900
+          ],
+          "scheduled": true
+        },
+        "privilege_usage": {
+          "anomaly": true,
+          "category": "api",
+          "failure": [
+            0,
+            0.1
+          ],
+          "novelty": [
+            0,
+            0.2
+          ],
+          "privilege": [
+            1,
+            1
+          ],
+          "probability": 0.08,
+          "rate": [
+            10,
+            100
+          ],
+          "scheduled": false
+        },
+        "workload_communication": {
+          "anomaly": true,
+          "category": "workload",
+          "failure": [
+            0,
+            0.1
+          ],
+          "novelty": [
+            0.35,
+            1
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.08,
+          "rate": [
+            10,
+            100
+          ],
+          "scheduled": false
+        }
+      },
+      "version": "1.0.0"
+    },
+    "seed": 42,
+    "version": "1.0.0",
+    "volume": 4000,
+    "workloads": 12
+  },
+  "dataset_manifest_sha256": "f6d22a648e017e5f51366f4264f2ffee529ee7e34bcca3bda6e01757cede759b",
+  "dataset_quality": {
+    "families": {
+      "api_frequency": 285,
+      "failed_auth": 320,
+      "normal_api": 765,
+      "normal_auth": 845,
+      "normal_workload": 820,
+      "operational_surge": 290,
+      "privilege_usage": 330,
+      "workload_communication": 345
+    },
+    "instances": 800,
+    "labels": {
+      "False": 2720,
+      "True": 1280
+    },
+    "partitions": {
+      "holdout": {
+        "True": 345
+      },
+      "test": {
+        "False": 485,
+        "True": 215
+      },
+      "train": {
+        "False": 1620,
+        "True": 555
+      },
+      "validation": {
+        "False": 615,
+        "True": 165
+      }
+    },
+    "rows": 4000
+  },
+  "dependency_versions": {
+    "joblib": "1.4.2",
+    "numpy": "2.2.6",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "dirty": true,
+  "environment": {
+    "architecture": "arm64",
+    "platform": "Darwin",
+    "processor": "arm",
+    "python": "3.12.9"
+  },
+  "features": [
+    "request_count",
+    "failure_ratio",
+    "privilege_delta",
+    "peer_novelty",
+    "scheduled_operation"
+  ],
+  "models": {
+    "deterministic": {
+      "parameters": {
+        "count_scale": 500,
+        "failure_scale": 0.6,
+        "novelty_scale": 0.6
+      },
+      "partitions": {
+        "holdout": {
+          "average_precision": null,
+          "ci95": {
+            "f1": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 0.9955965854838504
+            },
+            "false_positive_rate": null,
+            "pr_auc": null,
+            "precision": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 1.0
+            },
+            "recall": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 0.991231884057971
+            },
+            "roc_auc": null
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              344
+            ]
+          ],
+          "f1": 0.9985486211901307,
+          "false_positive_rate": null,
+          "latency_us_per_event": {
+            "batch_size": 345,
+            "boundary": "warm batch scoring; excludes extraction/I/O/recommendations",
+            "median": 0.030857971014492752,
+            "p95": 0.036213333333333333,
+            "repeats": 10
+          },
+          "n": 345,
+          "per_scenario": {
+            "workload_communication": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  344
+                ]
+              ],
+              "f1": 0.9985486211901307,
+              "false_positive_rate": null,
+              "n": 345,
+              "positives": 345,
+              "pr_auc": null,
+              "precision": 1.0,
+              "recall": 0.9971014492753624,
+              "roc_auc": null
+            }
+          },
+          "positives": 345,
+          "pr_auc": null,
+          "precision": 1.0,
+          "recall": 0.9971014492753624,
+          "recommendation_distribution": {
+            "CONTAINMENT_REVIEW": 249,
+            "ESCALATE": 95,
+            "MONITOR": 1
+          },
+          "roc_auc": null
+        },
+        "test": {
+          "average_precision": 0.991694271517603,
+          "ci95": {
+            "f1": {
+              "eligible_replicates": 200,
+              "high": 0.9910550458715598,
+              "low": 0.905320044918585
+            },
+            "false_positive_rate": {
+              "eligible_replicates": 200,
+              "high": 0.0,
+              "low": 0.0
+            },
+            "pr_auc": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 0.977877168175475
+            },
+            "precision": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 1.0
+            },
+            "recall": {
+              "eligible_replicates": 200,
+              "high": 0.9822727272727274,
+              "low": 0.827018018018018
+            },
+            "roc_auc": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 0.9871288807009132
+            }
+          },
+          "confusion_matrix": [
+            [
+              485,
+              0
+            ],
+            [
+              19,
+              196
+            ]
+          ],
+          "f1": 0.9537712895377128,
+          "false_positive_rate": 0.0,
+          "latency_us_per_event": {
+            "batch_size": 700,
+            "boundary": "warm batch scoring; excludes extraction/I/O/recommendations",
+            "median": 0.01794642857142857,
+            "p95": 0.024678571428571428,
+            "repeats": 10
+          },
+          "n": 700,
+          "per_scenario": {
+            "api_frequency": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  19,
+                  56
+                ]
+              ],
+              "f1": 0.8549618320610687,
+              "false_positive_rate": null,
+              "n": 75,
+              "positives": 75,
+              "pr_auc": null,
+              "precision": 1.0,
+              "recall": 0.7466666666666667,
+              "roc_auc": null
+            },
+            "failed_auth": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  60
+                ]
+              ],
+              "f1": 1.0,
+              "false_positive_rate": null,
+              "n": 60,
+              "positives": 60,
+              "pr_auc": null,
+              "precision": 1.0,
+              "recall": 1.0,
+              "roc_auc": null
+            },
+            "normal_api": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  110,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "f1": null,
+              "false_positive_rate": 0.0,
+              "n": 110,
+              "positives": 0,
+              "pr_auc": null,
+              "precision": null,
+              "recall": null,
+              "roc_auc": null
+            },
+            "normal_auth": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  145,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "f1": null,
+              "false_positive_rate": 0.0,
+              "n": 145,
+              "positives": 0,
+              "pr_auc": null,
+              "precision": null,
+              "recall": null,
+              "roc_auc": null
+            },
+            "normal_workload": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  170,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "f1": null,
+              "false_positive_rate": 0.0,
+              "n": 170,
+              "positives": 0,
+              "pr_auc": null,
+              "precision": null,
+              "recall": null,
+              "roc_auc": null
+            },
+            "operational_surge": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  60,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "f1": null,
+              "false_positive_rate": 0.0,
+              "n": 60,
+              "positives": 0,
+              "pr_auc": null,
+              "precision": null,
+              "recall": null,
+              "roc_auc": null
+            },
+            "privilege_usage": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  80
+                ]
+              ],
+              "f1": 1.0,
+              "false_positive_rate": null,
+              "n": 80,
+              "positives": 80,
+              "pr_auc": null,
+              "precision": 1.0,
+              "recall": 1.0,
+              "roc_auc": null
+            }
+          },
+          "positives": 215,
+          "pr_auc": 0.9916860008487111,
+          "precision": 1.0,
+          "recall": 0.9116279069767442,
+          "recommendation_distribution": {
+            "CONTAINMENT_REVIEW": 116,
+            "ESCALATE": 80,
+            "MONITOR": 504
+          },
+          "roc_auc": 0.9950419563653801
+        }
+      },
+      "threshold": 0.568,
+      "threshold_selection": "maximum validation F1; highest threshold on ties"
+    },
+    "isolation_forest": {
+      "parameters": {
+        "bootstrap": false,
+        "contamination": "auto",
+        "max_features": 1.0,
+        "max_samples": "auto",
+        "n_estimators": 100,
+        "n_jobs": 1,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "partitions": {
+        "holdout": {
+          "average_precision": null,
+          "ci95": {
+            "f1": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 1.0
+            },
+            "false_positive_rate": null,
+            "pr_auc": null,
+            "precision": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 1.0
+            },
+            "recall": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 1.0
+            },
+            "roc_auc": null
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              345
+            ]
+          ],
+          "f1": 1.0,
+          "false_positive_rate": null,
+          "latency_us_per_event": {
+            "batch_size": 345,
+            "boundary": "warm batch scoring, includes scaler; excludes extraction/I/O/recommendations",
+            "median": 14.837560869565216,
+            "p95": 24.177155797101438,
+            "repeats": 10
+          },
+          "n": 345,
+          "per_scenario": {
+            "workload_communication": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  345
+                ]
+              ],
+              "f1": 1.0,
+              "false_positive_rate": null,
+              "n": 345,
+              "positives": 345,
+              "pr_auc": null,
+              "precision": 1.0,
+              "recall": 1.0,
+              "roc_auc": null
+            }
+          },
+          "positives": 345,
+          "pr_auc": null,
+          "precision": 1.0,
+          "recall": 1.0,
+          "recommendation_distribution": {
+            "CONTAINMENT_REVIEW": 250,
+            "ESCALATE": 95
+          },
+          "roc_auc": null
+        },
+        "test": {
+          "average_precision": 0.6029811643053699,
+          "ci95": {
+            "f1": {
+              "eligible_replicates": 200,
+              "high": 0.8985808081461267,
+              "low": 0.7333689491777386
+            },
+            "false_positive_rate": {
+              "eligible_replicates": 200,
+              "high": 0.1869304906542056,
+              "low": 0.055482456140350876
+            },
+            "pr_auc": {
+              "eligible_replicates": 200,
+              "high": 0.7841837897929336,
+              "low": 0.4747558013575829
+            },
+            "precision": {
+              "eligible_replicates": 200,
+              "high": 0.8879538391943986,
+              "low": 0.6439027960767092
+            },
+            "recall": {
+              "eligible_replicates": 200,
+              "high": 0.9650610465116279,
+              "low": 0.812724586288416
+            },
+            "roc_auc": {
+              "eligible_replicates": 200,
+              "high": 0.9475451695906432,
+              "low": 0.826335651941522
+            }
+          },
+          "confusion_matrix": [
+            [
+              425,
+              60
+            ],
+            [
+              24,
+              191
+            ]
+          ],
+          "f1": 0.8197424892703863,
+          "false_positive_rate": 0.12371134020618557,
+          "latency_us_per_event": {
+            "batch_size": 700,
+            "boundary": "warm batch scoring, includes scaler; excludes extraction/I/O/recommendations",
+            "median": 4.912887142857143,
+            "p95": 5.029265357142857,
+            "repeats": 10
+          },
+          "n": 700,
+          "per_scenario": {
+            "api_frequency": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  16,
+                  59
+                ]
+              ],
+              "f1": 0.8805970149253731,
+              "false_positive_rate": null,
+              "n": 75,
+              "positives": 75,
+              "pr_auc": null,
+              "precision": 1.0,
+              "recall": 0.7866666666666666,
+              "roc_auc": null
+            },
+            "failed_auth": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  8,
+                  52
+                ]
+              ],
+              "f1": 0.9285714285714286,
+              "false_positive_rate": null,
+              "n": 60,
+              "positives": 60,
+              "pr_auc": null,
+              "precision": 1.0,
+              "recall": 0.8666666666666667,
+              "roc_auc": null
+            },
+            "normal_api": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  110,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "f1": null,
+              "false_positive_rate": 0.0,
+              "n": 110,
+              "positives": 0,
+              "pr_auc": null,
+              "precision": null,
+              "recall": null,
+              "roc_auc": null
+            },
+            "normal_auth": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  145,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "f1": null,
+              "false_positive_rate": 0.0,
+              "n": 145,
+              "positives": 0,
+              "pr_auc": null,
+              "precision": null,
+              "recall": null,
+              "roc_auc": null
+            },
+            "normal_workload": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  170,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "f1": null,
+              "false_positive_rate": 0.0,
+              "n": 170,
+              "positives": 0,
+              "pr_auc": null,
+              "precision": null,
+              "recall": null,
+              "roc_auc": null
+            },
+            "operational_surge": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  60
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "f1": 0.0,
+              "false_positive_rate": 1.0,
+              "n": 60,
+              "positives": 0,
+              "pr_auc": null,
+              "precision": 0.0,
+              "recall": null,
+              "roc_auc": null
+            },
+            "privilege_usage": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  80
+                ]
+              ],
+              "f1": 1.0,
+              "false_positive_rate": null,
+              "n": 80,
+              "positives": 80,
+              "pr_auc": null,
+              "precision": 1.0,
+              "recall": 1.0,
+              "roc_auc": null
+            }
+          },
+          "positives": 215,
+          "pr_auc": 0.6005674889276325,
+          "precision": 0.7609561752988048,
+          "recall": 0.8883720930232558,
+          "recommendation_distribution": {
+            "CONTAINMENT_REVIEW": 157,
+            "ESCALATE": 94,
+            "MONITOR": 449
+          },
+          "roc_auc": 0.8877583313354112
+        }
+      },
+      "threshold": 0.47539107801854313,
+      "threshold_selection": "maximum validation F1; highest threshold on ties"
+    },
+    "random_forest": {
+      "parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 8,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 2,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 100,
+        "n_jobs": 1,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "partitions": {
+        "holdout": {
+          "average_precision": null,
+          "ci95": {
+            "f1": {
+              "eligible_replicates": 200,
+              "high": 0.0,
+              "low": 0.0
+            },
+            "false_positive_rate": null,
+            "pr_auc": null,
+            "precision": null,
+            "recall": {
+              "eligible_replicates": 200,
+              "high": 0.0,
+              "low": 0.0
+            },
+            "roc_auc": null
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              345,
+              0
+            ]
+          ],
+          "f1": 0.0,
+          "false_positive_rate": null,
+          "latency_us_per_event": {
+            "batch_size": 345,
+            "boundary": "warm batch scoring, includes scaler; excludes extraction/I/O/recommendations",
+            "median": 5.467330434782609,
+            "p95": 5.8364442028985515,
+            "repeats": 10
+          },
+          "n": 345,
+          "per_scenario": {
+            "workload_communication": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  345,
+                  0
+                ]
+              ],
+              "f1": 0.0,
+              "false_positive_rate": null,
+              "n": 345,
+              "positives": 345,
+              "pr_auc": null,
+              "precision": null,
+              "recall": 0.0,
+              "roc_auc": null
+            }
+          },
+          "positives": 345,
+          "pr_auc": null,
+          "precision": null,
+          "recall": 0.0,
+          "recommendation_distribution": {
+            "MONITOR": 345
+          },
+          "roc_auc": null
+        },
+        "test": {
+          "average_precision": 0.9988453407058058,
+          "ci95": {
+            "f1": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 0.9672466015779503
+            },
+            "false_positive_rate": {
+              "eligible_replicates": 200,
+              "high": 0.0,
+              "low": 0.0
+            },
+            "pr_auc": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 0.9962694455373681
+            },
+            "precision": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 1.0
+            },
+            "recall": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 0.9365707317073171
+            },
+            "roc_auc": {
+              "eligible_replicates": 200,
+              "high": 1.0,
+              "low": 0.997979161308204
+            }
+          },
+          "confusion_matrix": [
+            [
+              485,
+              0
+            ],
+            [
+              6,
+              209
+            ]
+          ],
+          "f1": 0.9858490566037735,
+          "false_positive_rate": 0.0,
+          "latency_us_per_event": {
+            "batch_size": 700,
+            "boundary": "warm batch scoring, includes scaler; excludes extraction/I/O/recommendations",
+            "median": 3.762321428571429,
+            "p95": 3.9571671428571427,
+            "repeats": 10
+          },
+          "n": 700,
+          "per_scenario": {
+            "api_frequency": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  6,
+                  69
+                ]
+              ],
+              "f1": 0.9583333333333334,
+              "false_positive_rate": null,
+              "n": 75,
+              "positives": 75,
+              "pr_auc": null,
+              "precision": 1.0,
+              "recall": 0.92,
+              "roc_auc": null
+            },
+            "failed_auth": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  60
+                ]
+              ],
+              "f1": 1.0,
+              "false_positive_rate": null,
+              "n": 60,
+              "positives": 60,
+              "pr_auc": null,
+              "precision": 1.0,
+              "recall": 1.0,
+              "roc_auc": null
+            },
+            "normal_api": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  110,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "f1": null,
+              "false_positive_rate": 0.0,
+              "n": 110,
+              "positives": 0,
+              "pr_auc": null,
+              "precision": null,
+              "recall": null,
+              "roc_auc": null
+            },
+            "normal_auth": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  145,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "f1": null,
+              "false_positive_rate": 0.0,
+              "n": 145,
+              "positives": 0,
+              "pr_auc": null,
+              "precision": null,
+              "recall": null,
+              "roc_auc": null
+            },
+            "normal_workload": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  170,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "f1": null,
+              "false_positive_rate": 0.0,
+              "n": 170,
+              "positives": 0,
+              "pr_auc": null,
+              "precision": null,
+              "recall": null,
+              "roc_auc": null
+            },
+            "operational_surge": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  60,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "f1": null,
+              "false_positive_rate": 0.0,
+              "n": 60,
+              "positives": 0,
+              "pr_auc": null,
+              "precision": null,
+              "recall": null,
+              "roc_auc": null
+            },
+            "privilege_usage": {
+              "average_precision": null,
+              "confusion_matrix": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  80
+                ]
+              ],
+              "f1": 1.0,
+              "false_positive_rate": null,
+              "n": 80,
+              "positives": 80,
+              "pr_auc": null,
+              "precision": 1.0,
+              "recall": 1.0,
+              "roc_auc": null
+            }
+          },
+          "positives": 215,
+          "pr_auc": 0.9988433149877458,
+          "precision": 1.0,
+          "recall": 0.9720930232558139,
+          "recommendation_distribution": {
+            "CONTAINMENT_REVIEW": 121,
+            "ESCALATE": 88,
+            "MONITOR": 491
+          },
+          "roc_auc": 0.9993191081275474
+        }
+      },
+      "threshold": 0.824931506849315,
+      "threshold_selection": "maximum validation F1; highest threshold on ties"
+    }
+  },
+  "predictions_sha256": "0071bd96e4b9bbb6eb39dd7a0991433c5aff7e6251ba654183fea28836b76e99",
+  "recommendation_expectations": [
+    {
+      "actual": "MONITOR",
+      "aligned": true,
+      "expected": "MONITOR",
+      "family": "normal_auth"
+    },
+    {
+      "actual": "MONITOR",
+      "aligned": true,
+      "expected": "MONITOR",
+      "family": "normal_api"
+    },
+    {
+      "actual": "MONITOR",
+      "aligned": true,
+      "expected": "MONITOR",
+      "family": "normal_workload"
+    },
+    {
+      "actual": "MONITOR",
+      "aligned": true,
+      "expected": "MONITOR",
+      "family": "operational_surge"
+    },
+    {
+      "actual": "INVESTIGATE",
+      "aligned": true,
+      "expected": "INVESTIGATE",
+      "family": "failed_auth"
+    },
+    {
+      "actual": "ESCALATE",
+      "aligned": true,
+      "expected": "ESCALATE",
+      "family": "api_frequency"
+    },
+    {
+      "actual": "CONTAINMENT_REVIEW",
+      "aligned": true,
+      "expected": "CONTAINMENT_REVIEW",
+      "family": "privilege_usage"
+    },
+    {
+      "actual": "ESCALATE",
+      "aligned": true,
+      "expected": "ESCALATE",
+      "family": "workload_communication"
+    }
+  ],
+  "runtime_seconds": 1.2063108750007814,
+  "seed": 42,
+  "source_hashes": {
+    "__init__.py": "bd6e4195ca52b9e292940c53bf8aea6cada8092fcfc831fcd2d28f7ab4bd65b0",
+    "benchmark.py": "e8a2a47448670725435b17ccb51d22604e2234ae71c7834748c08d42b242ed37",
+    "dataset.py": "1430327dbca0608e9592ea77db2ab44c68cbc972ce29935bed49c08cc9432be7",
+    "requirements.txt": "16bcb5e22014f4df3e738b1ad65e662e7bc658262db3c96d8ca4931180cf18b8",
+    "risk.py": "8adeaa0295fa0a9d88ca68f37d444906d6871235fdb5ac6c0709cb38c0adda43",
+    "scenarios/v1.json": "3589d6d3e26786c2ef7ee285746a44b97d5d8b9340972548f01c0492c681f7eb",
+    "tests/test_benchmark.py": "6b178fa83c1f81858b510b74c7c584410978ff42444d74d3272d494f18829e23",
+    "tests/test_dataset.py": "99489dbbdc2df21f79ce640f15a76f7120aeae4f86d97634ccf8a509b1fd1ab0",
+    "tests/test_risk.py": "e24d044f1c3354540827e1903d822d50d20bd6d7f63505fe1e34147238dfafd0",
+    "verify.py": "a8657ebcca1f903c1f2f452c62326068bce27209b0ff966d565d806f2a50831c"
+  },
+  "status": "EXPERIMENTAL"
+}

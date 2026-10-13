@@ -1,6 +1,6 @@
-# AeglysAI five-track technical hackathon
+# AeglysAI six-track technical hackathon
 
-One offering, five beginner-friendly tracks. Use **any programming language**.
+One offering, six beginner-friendly tracks. Use **any programming language**.
 Select exactly one approved track. AeglysAI integration
 is optional for the final challenge; a standalone local program is sufficient after mandatory qualification and selection. These are technical
 challenge materials, not an announcement of event dates, prizes or judging staff.
@@ -10,6 +10,7 @@ challenge materials, not an announcement of event dates, prizes or judging staff
 - [API Traffic Watch](tracks/api-traffic-watch.md)
 - [Explain My Security Alert](tracks/explain-security-alert.md)
 - [Predict the Outage](tracks/predict-the-outage.md)
+- [Challenge 06: AI for Everyday Life](tracks/ai-for-everyday-life.md)
 
 Start from the [project README template](templates/PROJECT-README.md),
 [submission template](templates/SUBMISSION.md),

@@ -80,3 +80,10 @@ Model D, and limited to an isolated synthetic test environment. H3 requires
 matched D variants with and without operational state. A–D comparison alone cannot
 attribute a difference to one added component. H4 requires matched measurement
 boundaries and declared budgets. No comparator is implemented by this definition.
+
+## 2026-10-13 — public-safe behavioral evaluation addition
+
+[ACBSD](../../../research/acbsd/README.md) implements an offline synthetic
+behavioral dataset and EXPERIMENTAL detector benchmark. This supplies public-safe
+behavioral evaluation utilities only; the Model D architecture above remains
+PLANNED. No adaptive authorization, response execution or rollback is implemented.

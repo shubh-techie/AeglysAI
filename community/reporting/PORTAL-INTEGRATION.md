@@ -1,7 +1,10 @@
 # Portal integration contract — research repository handover
 
-Consume only an owner-reviewed, approved immutable repository commit. Current local
-proposals are not yet public releases. No Portal source is modified by this task.
+Consume only an owner-reviewed, approved immutable repository commit. The four
+contracts are published on public main. After owner approval, pin exactly
+`711c1556e27bd226c08fb6a8c7b0d9040b4c88ee`; do not resolve a moving branch.
+This identifies published bytes, not a security-cleared release: the publication-safety
+job still fails. No Portal source is modified by this reconciliation.
 
 | Contract | Path | Version |
 | --- | --- | --- |
@@ -68,3 +71,15 @@ All four schema files remain byte-for-byte unchanged at version 1.0.0. Existing 
 Distinct event-stage displays need an explicitly versioned reporting extension and migration review before Portal ingestion. Specify stage identifiers, units, immutable aggregate snapshots, period/event scope, deduplication and publication/privacy approval; test old and new consumers separately and retain immutable historical 1.0.0 reports. No such extension is implemented or released by this review. Existing 1.0.0 evidence/reporting can be reviewed for integration; a complete structured event-stage dashboard is NOT READY. Official Form URLs and organizational privacy/access decisions are also unverified.
 
 Event applicant/qualification/selection counts use individuals; team submission, verified project and finalist/winner counts use explicitly declared teams or projects. Every team member qualifies independently; team size is 1–4. Private team-ID/registration mappings never enter public evidence. Publication consent is separate from judging consent. Competition outcomes remain distinct from independent adoption.
+
+## Published schema byte verification
+
+SHA-256 values below are calculated from Git blobs at the exact commit above,
+without newline normalization. All four contracts remain version 1.0.0.
+
+| Schema path | SHA-256 |
+| --- | --- |
+| `community/adoption/schemas/adoption-1.0.0.schema.json` | `c72ad408deeb5611498fdbbbc1fd66471d302e254206837fcc34631023793794` |
+| `community/contributors/schemas/recognition-1.0.0.schema.json` | `9f9093ad4834e54a4505c617ae02c52604d0a0789707a071a211c986c7be405e` |
+| `community/evidence/schemas/evidence-1.0.0.schema.json` | `51760d5570ab5317d6c898d0eab12c8cdbcdb4b6779ee1233df7e33e5915ddc6` |
+| `community/reporting/schemas/monthly-impact-1.0.0.schema.json` | `4857b93e4c49d6cfb8deab6a365bd6627ca134c7c371298a481d3f7a48c3bb27` |
