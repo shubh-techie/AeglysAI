@@ -31,3 +31,31 @@ def expectation_check():
                 ('workload_communication', .6, 2, 'ESCALATE')]
     return [{'family': f, 'expected': expected, 'actual': recommend(e, c)['recommendation'],
              'aligned': recommend(e, c)['recommendation'] == expected} for f, e, c, expected in fixtures]
+
+
+def evaluate_recommendations(events, truth, recommendations):
+    """Evaluation-only policy: benign monitor; anomalies escalate/review by asset.
+
+    This is a declared synthetic binary policy, not incident severity ground truth.
+    Truth is consumed after inference only. Intermediate INVESTIGATE remains covered
+    by the independent graded fixtures.
+    """
+    if not len(events) == len(truth) == len(recommendations):
+        raise ValueError('recommendation row count')
+    families = {}
+    consistent = aligned = 0
+    for event, label, actual in zip(events, truth, recommendations):
+        expected = ('MONITOR' if not label['anomaly'] else
+                    'ESCALATE' if event['asset_criticality'] == 1 else 'CONTAINMENT_REVIEW')
+        repeated = recommend(actual['evidence'], event['asset_criticality'])
+        consistent += actual == repeated
+        match = actual['recommendation'] == expected
+        aligned += match
+        family = families.setdefault(label['family'], {'n': 0, 'aligned': 0})
+        family['n'] += 1
+        family['aligned'] += match
+    for values in families.values():
+        values['alignment'] = values['aligned']/values['n']
+    return {'policy': 'benign MONITOR; anomalous criticality 1 ESCALATE, 2/3 CONTAINMENT_REVIEW',
+            'n': len(events), 'aligned': aligned, 'alignment': aligned/len(events) if events else None,
+            'repeat_consistency': consistent/len(events) if events else None, 'per_scenario': families}

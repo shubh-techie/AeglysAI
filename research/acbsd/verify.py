@@ -13,7 +13,7 @@ def verify(path):
         scenarios.write_bytes(encode(config['scenarios']))
         rebuilt = generate(seed=config['seed'], identities=config['identities'],
                            workloads=config['workloads'], duration=config['duration_seconds'],
-                           volume=config['volume'], scenario_path=scenarios, holdout=config['holdout'])
+                           volume=config['volume'], scenario_path=scenarios, holdout=config['holdout'], split=config.get('split', 'random'))
     if rebuilt != (events, truth, config):
         raise ValueError('deterministic regeneration mismatch')
     return manifest['quality']

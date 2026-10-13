@@ -753,3 +753,18 @@ Updated only the affected community contracts, documentation and tests. 27 task 
   are in research/acbsd/HANDOFF.md. Prior uncommitted work remains preserved.
 - No commit, push, PR, merge, publication or history rewrite. Owner review and
   unresolved disclosure/security decisions remain required before publication.
+
+## 2026-10-13 — AEGLYSAI-DATA-002 local validation (uncommitted)
+
+Audited DATA-001 commit a497b23 and live remote main; no matching public PR was
+verified. Generated and regenerated 50,000 synthetic windows (seed 42), with 16,370
+anomaly labels; added chronological split boundary gaps and physical split exports.
+Corrected rejection of valid repeated feature values; retained failed and preliminary
+runs locally. Executed deterministic, Random Forest and Isolation Forest experiments
+and non-enforcing recommendation evaluation. Strong known-family scores coexist
+with poor Random Forest holdout recall and Isolation Forest benign-surge false alarms.
+
+Research tests 19 passed, .NET tests 168 passed, security tests 27 passed. Historical
+tracked/history publication gates still fail. No commit, push, PR, merge, publication,
+Portal change or legacy history modification. See the [full evidence report](../../research/acbsd/DATA002_REPORT.md)
+for commands, counts, hashes, metrics, limitations and proposed review actions.

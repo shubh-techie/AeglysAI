@@ -37,7 +37,7 @@ def source_hashes():
 
 
 def generate(seed=42, identities=20, workloads=12, duration=86400, volume=4000,
-             scenario_path=SCENARIOS, holdout='workload_communication'):
+             scenario_path=SCENARIOS, holdout='workload_communication', split='random'):
     for value in (seed, identities, workloads, duration, volume):
         if type(value) is not int:
             raise ValueError('integer configuration required')
@@ -64,13 +64,20 @@ def generate(seed=42, identities=20, workloads=12, duration=86400, volume=4000,
                 raise ValueError('scenario ratio')
         if params['privilege'] not in ([0, 0], [1, 1]):
             raise ValueError('privilege bounds must be fixed binary')
+    if split == 'chronological' and duration <= 120:
+        raise ValueError('chronological duration must exceed two 60-second gaps')
+    if split not in ('random', 'chronological'):
+        raise ValueError('unsupported split')
     rng = random.Random(seed)
     events, truth = [], []
     # Correlated bursts of up to five windows; gaps separate instances.
     for instance in range((volume + 4)//5):
+        fraction = instance / ((volume + 4)//5)
         family = rng.choices(list(families), weights=probabilities)[0]
         params = families[family]
         partition = 'holdout' if family == holdout else rng.choices(PARTITIONS[:3], [.6, .2, .2])[0]
+        if split == 'chronological' and family != holdout:
+            partition = 'train' if fraction < .6 else 'validation' if fraction < .8 else 'test'
         identity, workload = rng.randrange(identities), rng.randrange(workloads)
         peer = (workload + rng.randrange(1, workloads)) % workloads
         base = {k: rng.uniform(*params[k]) for k in ('rate', 'failure', 'novelty')}
@@ -79,7 +86,8 @@ def generate(seed=42, identities=20, workloads=12, duration=86400, volume=4000,
             index = len(events)
             event_id = f'evt-{index:09d}'
             events.append(dict(event_id=event_id,
-                timestamp=(START + timedelta(seconds=duration*(index+1)/(volume+1))).isoformat(timespec='microseconds'),
+                timestamp=(START + timedelta(seconds=(duration-120 if split == 'chronological' else duration)*(index+1)/(volume+1)
+                    + (60*int(fraction >= .6)+60*int(fraction >= .8) if split == 'chronological' else 0))).isoformat(timespec='microseconds'),
                 identity_id=f'identity-{identity:04d}', workload_id=f'workload-{workload:04d}',
                 peer_workload_id=f'workload-{peer:04d}', source_ip=f'192.0.2.{identity % 254 + 1}',
                 category=params['category'], asset_criticality=criticality,
@@ -93,6 +101,9 @@ def generate(seed=42, identities=20, workloads=12, duration=86400, volume=4000,
     config = dict(version=VERSION, data_kind='SYNTHETIC', seed=seed, identities=identities,
                   workloads=workloads, duration_seconds=duration, volume=volume, holdout=holdout,
                   scenario_sha256=digest(encode(catalog)), scenarios=catalog)
+    if split != 'random':
+        config['split'] = split
+        config['quality_version'] = '1.1.0'
     validate(events, truth, config)
     return events, truth, config
 
@@ -107,6 +118,7 @@ def validate(events, truth, config):
     require(len({t['event_id'] for t in truth}) == len(truth), 'duplicate truth id')
     labels = {t['event_id']: t for t in truth}
     groups, payloads, previous = {}, set(), START
+    repeated_payloads = 0
     for event in events:
         require(set(event) == EVENT_KEYS and all(v is not None for v in event.values()), 'schema/missing value')
         require(re.fullmatch(r'evt-\d{9}', event['event_id']) is not None, 'event id')
@@ -130,7 +142,7 @@ def validate(events, truth, config):
         for key in ('failure_ratio', 'peer_novelty'):
             require(type(event[key]) in (float, int) and 0 <= event[key] <= 1, 'ratio')
         payload = encode({k: v for k, v in event.items() if k not in ('event_id', 'timestamp')})
-        require(payload not in payloads, 'duplicate observation payload')
+        repeated_payloads += payload in payloads
         payloads.add(payload)
         require(event['event_id'] in labels, 'truth join')
         t = labels[event['event_id']]
@@ -141,10 +153,19 @@ def validate(events, truth, config):
         require((t['partition'] == 'holdout') == (t['family'] == config['holdout']), 'family leakage')
         relationship = (t['partition'], t['family'], event['identity_id'], event['workload_id'], event['peer_workload_id'])
         require(groups.setdefault(t['instance_id'], relationship) == relationship, 'group leakage/relationship')
-    return {'rows': len(events), 'instances': len(groups),
+    if config.get('split') == 'chronological':
+        ranges = {p: [e['timestamp'] for e in events if labels[e['event_id']]['partition'] == p]
+                  for p in PARTITIONS[:3]}
+        for left, right in zip(PARTITIONS[:2], PARTITIONS[1:3]):
+            require(not ranges[left] or not ranges[right] or (datetime.fromisoformat(min(ranges[right])) - datetime.fromisoformat(max(ranges[left]))).total_seconds() > 60,
+                    'temporal leakage')
+    quality = {'rows': len(events), 'instances': len(groups),
             'labels': dict(Counter(str(t['anomaly']) for t in truth)),
             'families': dict(Counter(t['family'] for t in truth)),
             'partitions': {p: dict(Counter(str(t['anomaly']) for t in truth if t['partition'] == p)) for p in PARTITIONS}}
+    if config.get('quality_version') == '1.1.0':
+        quality['repeated_feature_payloads'] = repeated_payloads
+    return quality
 
 
 def write_dataset(path, events, truth, config):
@@ -184,6 +205,7 @@ def main():
     for name, default in [('seed', 42), ('identities', 20), ('workloads', 12), ('duration', 86400), ('volume', 4000)]:
         parser.add_argument('--'+name, type=int, default=default)
     parser.add_argument('--scenarios', type=Path, default=SCENARIOS)
+    parser.add_argument('--split', choices=('random', 'chronological'), default='random')
     parser.add_argument('--holdout', default='workload_communication')
     args = vars(parser.parse_args())
     output = args.pop('output')

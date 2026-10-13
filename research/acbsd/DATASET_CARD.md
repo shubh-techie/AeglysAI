@@ -31,7 +31,7 @@ matches a measured operational environment. All values are required and finite;
 missing values and extra fields are rejected rather than silently imputed.
 
 Quality checks cover row counts, schema, identifiers, timestamps, categories,
-relationships, documentation addresses, exact observation duplicates, labels,
+relationships, documentation addresses, repeated feature-payload diagnostics, labels,
 scenario-group leakage, holdout-family exclusion and file integrity. Hashes detect
 accidental changes; they are not signatures or a trust boundary against a malicious
 party modifying both data and manifest. Verification also regenerates the data.
@@ -49,8 +49,12 @@ not reconstructed from raw request logs; arbitrary window placement can overlap.
 
 Temporal bursts are correlated but traffic arrival times, changing roles, service
 lifecycles, mixed incidents, drift, outages and adversarial evasion are not modeled.
-Random grouped splitting shares entities and chronological ranges. Family holdout
+Default random grouped splitting shares entities and chronological ranges.
+DATA-002 chronological mode separates evaluation window boundaries by more than
+60 seconds but still shares entities across independent instances. Family holdout
 is only one narrow generalization test and contains anomalies only by default.
 Feature ranges partially encode the generator's definition of abnormality; high
 scores can reflect an easy simulation. Multi-seed and more realistic evaluations
-remain planned. Recommendations are offline outputs, never containment actions.
+remain planned. The completed [DATA-002 run](DATA002_REPORT.md) contains 50,000
+windows, with 32.74% anomaly labels; this is not measured production prevalence.
+Native Kubernetes audit fields, raw window aggregation and analyst feedback are absent. Recommendations are offline outputs, never containment actions.

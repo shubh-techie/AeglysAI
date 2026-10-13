@@ -38,3 +38,16 @@ validity. Research results require their actual environment and source snapshot;
 large local datasets remain ignored. No history or legacy changes are required.
 See [SPEC-019](../specs/SPEC-019-SYNTHETIC-BEHAVIORAL-DATASET.md) and
 [methodology](../../../research/acbsd/METHODOLOGY.md).
+
+## DATA-002 extension — 2026-10-13
+
+Provide an optional chronological split with 60-second boundary gaps, keeping the
+existing random default. Related bursts remain grouped; entity-disjoint claims are
+not supported. Allow repeated feature values at different timestamps and report
+them separately from duplicate identifiers. Export verified partition artifacts
+without fitting. Evaluate recommendations against an explicit synthetic policy
+after inference; keep those expectations out of model inputs.
+
+The [actual 50k report](../../../research/acbsd/DATA002_REPORT.md) records tests,
+checksums and unfavorable model results. Raw Kubernetes/session generation and
+real-world effectiveness remain missing/unverified; historical security gates fail.
