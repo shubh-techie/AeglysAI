@@ -7,9 +7,9 @@ ROOT = Path(__file__).resolve().parents[3]
 
 
 class HackathonContractTests(unittest.TestCase):
-    def test_exactly_five_distinct_tracks_and_runnable_json_inputs(self):
+    def test_exactly_six_distinct_tracks_and_runnable_json_inputs(self):
         tracks = list((ROOT / 'community/hackathon/tracks').glob('*.md'))
-        self.assertEqual(len(tracks), 5)
+        self.assertEqual(len(tracks), 6)
         names = set()
         for path in tracks:
             text = path.read_text()
@@ -23,17 +23,43 @@ class HackathonContractTests(unittest.TestCase):
             data = json.loads(blocks[0])
             self.assertIsInstance(data, dict)
             self.assertTrue(data)
-        self.assertEqual(len(names), 5)
+        self.assertEqual(len(names), 6)
 
     def test_examples_have_expected_minimum_contracts(self):
         contracts = {'smart-login-guardian': {'events'}, 'find-the-anomaly': {'training_values', 'test_values'},
                      'api-traffic-watch': {'window_seconds', 'events'}, 'explain-security-alert': {'alerts'},
-                     'predict-the-outage': {'training', 'test'}}
+                     'predict-the-outage': {'training', 'test'},
+                     'ai-for-everyday-life': {'tasks', 'available_minutes'}}
         for slug, keys in contracts.items():
             with self.subTest(track=slug):
                 text = (ROOT / f'community/hackathon/tracks/{slug}.md').read_text()
                 example = json.loads(re.search(r'```json\n(.*?)\n```', text, re.S).group(1))
                 self.assertEqual(set(example), keys)
+
+    def test_everyday_life_example_and_shared_submission_rules(self):
+        text = (ROOT / 'community/hackathon/tracks/ai-for-everyday-life.md').read_text()
+        example = json.loads(re.search(r'```json\n(.*?)\n```', text, re.S).group(1))
+        self.assertGreaterEqual(example['available_minutes'], 0)
+        ids = [task['id'] for task in example['tasks']]
+        self.assertEqual(len(ids), len(set(ids)))
+        for task in example['tasks']:
+            self.assertTrue(task['id'].strip())
+            self.assertTrue(task['description'].strip())
+            self.assertGreater(task['duration_minutes'], 0)
+            self.assertIn(task['priority'], range(1, 6))
+        for rule in ['actual executable behavior', 'human-readable explanation',
+                     'zero-budget', 'duplicate IDs', 'only synthetic data',
+                     'every member', 'teams of 1–4', 'maximum two-minute', 'two-round judging']:
+            self.assertIn(rule, text.replace('\n', ' '))
+
+    def test_sixth_challenge_is_listed_in_participant_contracts(self):
+        index = (ROOT / 'community/hackathon/README.md').read_text()
+        self.assertIn('[Challenge 06: AI for Everyday Life](tracks/ai-for-everyday-life.md)', index)
+        self.assertIn('six approved tracks', (ROOT / 'community/hackathon/QUALIFICATION.md').read_text())
+        self.assertIn('six-track', (ROOT / 'community/hackathon/templates/PROJECT-README.md').read_text())
+        submission = (ROOT / 'community/hackathon/templates/SUBMISSION.md').read_text()
+        self.assertIn('Challenge 06: AI for Everyday Life', submission)
+        self.assertIn('120 seconds or less', submission)
 
     def test_templates_checklists_and_safety_are_present(self):
         for name in ['templates/PROJECT-README.md', 'templates/SUBMISSION.md', 'REPRODUCIBILITY.md', 'SAFETY.md']:

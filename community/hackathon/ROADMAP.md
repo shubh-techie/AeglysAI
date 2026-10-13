@@ -10,3 +10,11 @@ are resolved. Live collection, production integration and real impact are not im
 ## 2026-10-11 — AEGLYSAI-COM-REVIEW-002 addendum
 
 Mandatory qualification, selected-competitor submission, two-round judging and private Workspace administration are documented. Official Form URLs and event eligibility/capacity decisions remain organizer prerequisites. Existing version 1.0.0 schemas are preserved. Structured event-stage reporting requires a separately versioned extension and migration review; it is not implemented here. Publication remains blocked by unresolved tracked/history security findings.
+
+
+## AEGLYSAI-COM-RECONCILE-002
+
+Original five-track implementation: published on main `711c1556`, without security
+clearance. Sixth challenge and participant index/template alignment: IMPLEMENTED
+locally. Existing qualification, teams, judging and version 1.0.0 contracts remain
+unchanged. Further publication remains blocked by full repository security gates.

@@ -3,7 +3,7 @@
 Submit through the official final-submission Google Form after mandatory qualification and organizer selection.
 
 - Team ID (private Form field; omit from public README unless approved):
-- Exactly one approved challenge track and project title:
+- Exactly one approved challenge track and project title (see the [six-track index](../README.md), including Challenge 06: AI for Everyday Life):
 - Public source-code repository URL and exact commit:
 - Reproducible README: language/runtime, dependencies, offline setup/run/test commands, inputs, actual outputs and limitations:
 - Actual working-prototype demonstration and maximum two-minute video URL (120 seconds or less):

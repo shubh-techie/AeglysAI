@@ -21,18 +21,21 @@ behavioral anomaly detection, and policy-controlled response in distributed syst
 
 - **IMPLEMENTED**: .NET 8 Clean Architecture solution, nullable reference types,
   health endpoint, JWT authentication, Models A/B/C authorization, unit tests, integration tests,
-  architecture tests, structured audit, local Docker workflow, and documentation.
-- **PLANNED**: behavioral AI/ML (Model D), live context, protected-operation
+  architecture tests, structured audit, local Docker workflow, documentation,
+  and offline synthetic behavioral dataset tools.
+- **PLANNED**: Model D production integration, live context, protected-operation
   enforcement, durable audit, production identity-provider integration and deployment.
-- **EXPERIMENTAL**: Models A/B/C baselines are implemented; an initial synthetic engine-only smoke run has executed.
+- **EXPERIMENTAL**: Models A/B/C synthetic engine-only smoke runs and ACBSD
+  behavioral detector/recommendation evaluation; results establish no operational efficacy.
 
-No research findings, production datasets, or publications are claimed. A synthetic
-engine-only smoke run is available for framework validation; it supports no broad
-performance claims.
+No production datasets, operational effectiveness, or publications are claimed.
+Synthetic smoke results validate the research framework and illustrate limitations;
+they support no broad performance claims.
 
 AEGISAI-013 adds locally tested secret/disclosure gates and private-material
 ignore guards. Existing audit findings remain **NOT CLEARED**; publication is
-on hold and Model D work has not started. See the
+on hold. Public-safe behavioral research is now available separately; Model D
+authorization and confidential mechanisms remain unimplemented. See the
 [audit and baseline assessment](docs/aegisai/specs/SPEC-013-DISCLOSURE-PROTECTION.md),
 [security policy](SECURITY_AND_DISCLOSURE_POLICY.md) and
 [local scan instructions](scripts/security/README.md). Hosted security CI and
@@ -92,6 +95,7 @@ src/                         Domain, Application, Infrastructure, Api
 tests/                       Domain, Application, Integration, Architecture tests
 research/
   datasets/                  Dataset provenance and future data
+  acbsd/                     Offline synthetic behavioral dataset and benchmark
   experiments/               Reproducible experiment definitions
   notebooks/                 Exploratory analysis
   results/                   Actual experiment outputs
@@ -158,7 +162,8 @@ resource, and environment attributes come from server configuration, never reque
 attribute bags. Missing attributes or applicable rules deny. See
 [SPEC-006](docs/aegisai/specs/SPEC-006-ABAC.md) and
 [ADR-003](docs/aegisai/adr/ADR-003-POLICY-EVALUATION.md). These are experimental
-software baselines; behavioral AI and anomaly detection remain PLANNED. Model C adds deterministic contextual risk.
+software baselines; production behavioral integration remains PLANNED.
+Offline behavioral research is available separately in ACBSD. Model C adds deterministic contextual risk.
 
 ## Model C — deterministic contextual risk
 
@@ -184,7 +189,9 @@ for data minimization and best-effort delivery limits. Durable audit remains PLA
 An executable A–C engine-only comparison runner, synthetic scenarios, and generated
 smoke artifacts are available. See [research/README](research/README.md) for exact
 Release build/test/run commands and [SPEC-009](docs/aegisai/specs/SPEC-009-EXPERIMENT-FRAMEWORK.md)
-for measurement boundaries. Model D and detection-quality analysis remain PLANNED.
+for measurement boundaries. Model D authorization remains PLANNED. The separate
+[ACBSD research package](research/acbsd/README.md) adds EXPERIMENTAL synthetic
+behavioral detection-quality analysis and recommendation-only evaluation.
 Smoke measurements do not establish production performance or security effectiveness.
 
 ## Research definition

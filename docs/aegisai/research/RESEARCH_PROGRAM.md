@@ -38,3 +38,11 @@ research. See [Project history](../PROJECT_HISTORY.md).
 The [research architecture](../architecture/RESEARCH_ARCHITECTURE.md) supplies
 future protocol guidance; the [existing runner](../../../research/README.md)
 has a narrower engine-only scope. This definition does not implement Model D.
+
+## 2026-10-13 — behavioral dataset work package
+
+AEGLYSAI-DATA-001 adds [ACBSD](../../../research/acbsd/README.md) as an isolated,
+public-safe synthetic detection/recommendation research framework. Its
+[roadmap](../../../research/acbsd/ROADMAP.md) identifies multi-seed, drift,
+entity/time-disjoint and confirmatory evaluation gaps. This does not execute
+Model D authorization or answer H1–H4; existing disclosure restrictions remain.

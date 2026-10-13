@@ -690,3 +690,66 @@ Updated only the affected community contracts, documentation and tests. 13 task 
 ## 2026-10-11 — COM-008A: final compliance and participation review
 
 Updated only the affected community contracts, documentation and tests. 27 task tests passed in the combined snapshot. Mandatory individual qualification, team/privacy boundaries and competition-versus-adoption distinctions are documented. Schemas remain byte-identical at 1.0.0; an event-stage extension is PLANNED. Full tracked/history security findings remain unresolved. See community/REVIEW-002-HANDOVER.md in the integrated recovery snapshot; isolated task validation is recorded in task STATUS.md. No commit, push, PR or Portal modification.
+
+
+## 2026-10-11 — AEGLYSAI-COM-RECONCILE-001: published task reconciliation
+
+- Verified public main `711c1556e27bd226c08fb6a8c7b0d9040b4c88ee`, including
+  bundled community commit `70dd66c`; all five community implementations are present.
+- Compared each old task commit's changed files against main. Only its development-log
+  variant differs; every line in those variants already exists in main. No unique
+  implementation or factual log information requires a redundant task PR.
+- Preserved old branches, commits and private recovery evidence. Corrected current
+  status documentation while retaining historical local-review records.
+- Published schema versions remain 1.0.0; exact Git-blob SHA-256 values and the
+  approval-dependent Portal pin are recorded in the Portal integration guide.
+- Reconciliation validation: 87 community tests pass; local Markdown targets and
+  fences pass. Remote URLs and anchors are outside the documentation check.
+- Public-main security job confirms scanner installation and local tests pass,
+  but tracked/history scanning fails. Publication does not establish security
+  clearance; credential and disclosure decisions remain unresolved.
+- No commit, push, PR, merge, branch deletion, history rewrite, scanner-policy change
+  or Portal modification was performed by this reconciliation.
+
+
+## 2026-10-11 — AEGLYSAI-COM-RECONCILE-002: sixth challenge alignment
+
+- Preserved all nine existing reconciliation corrections in owner-only storage
+  outside the repository before further changes; retained historical log records.
+- Reverified public main `711c1556e27bd226c08fb6a8c7b0d9040b4c88ee`.
+  The original five community packages are published; their security clearance
+  remains unresolved. The sixth challenge is a local amendment only.
+- Added Challenge 06: AI for Everyday Life with synthetic task-planning input,
+  explained executable intelligent behavior, reproducibility and negative tests.
+  Updated the challenge index, qualification track count, participant templates,
+  ADR-009 amendment, SPEC-015 acceptance/traceability and affected roadmap.
+- Mandatory individual prequalification, teams of 1–4, maximum two-minute video,
+  two-round judging and private database-free Workspace administration are preserved.
+- Validation: 89 community tests pass; local Markdown targets/fences and diff
+  whitespace checks pass. All four version 1.0.0 schemas are byte-identical to main.
+- No Portal, Model D, patent-sensitive source or scanner-policy changes. No commit,
+  push, PR, merge or history rewrite performed. Full-gate outcomes are recorded in
+  the current hackathon status; existing unresolved findings must remain blocking.
+
+
+## 2026-10-13 — AEGLYSAI-DATA-001: public-safe synthetic behavioral research
+
+- Added ACBSD 1.0.0 offline generation with eight synthetic families, correlated
+  windows, separate ground truth, strict quality checks, hashes, deterministic
+  regeneration, instance-grouped partitions and scenario-family holdout.
+- Added EXPERIMENTAL deterministic/Random Forest/Isolation Forest evaluation with
+  train-only transformations, validation-only thresholds, per-family metrics,
+  clustered confidence intervals, actual inference timing and source snapshots.
+- Added a transparent recommendation-only risk reference and tests; no Model D
+  authorization, confidential response/rollback, Kubernetes execution or Portal edits.
+- Actual 4,000-window single-seed run: test F1 .9538/.9858/.8197 respectively.
+  Random Forest misses the unseen communication family; Isolation Forest flags all
+  60 benign operational-surge test windows. Synthetic results prove no real efficacy.
+- Validation: 15 research, 168 .NET, 27 security and 89 preserved community tests
+  pass after documented environment setup retries. Full tracked/history publication
+  gates still fail on existing unresolved findings; no gate configuration changed.
+- Added SPEC-019, ADR-013, dataset card, methodology, roadmap, traceability, CI test
+  job, small examples and observed validation record. Exact files/review evidence
+  are in research/acbsd/HANDOFF.md. Prior uncommitted work remains preserved.
+- No commit, push, PR, merge, publication or history rewrite. Owner review and
+  unresolved disclosure/security decisions remain required before publication.

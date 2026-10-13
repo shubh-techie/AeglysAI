@@ -1,0 +1,246 @@
+{
+  "config": {
+    "data_kind": "SYNTHETIC",
+    "duration_seconds": 86400,
+    "holdout": "workload_communication",
+    "identities": 20,
+    "scenario_sha256": "0bcf583d68ed108acbd462f2c303808338ff741f9f29346bc5264294332633fa",
+    "scenarios": {
+      "families": {
+        "api_frequency": {
+          "anomaly": true,
+          "category": "api",
+          "failure": [
+            0,
+            0.15
+          ],
+          "novelty": [
+            0,
+            0.2
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.08,
+          "rate": [
+            80,
+            900
+          ],
+          "scheduled": false
+        },
+        "failed_auth": {
+          "anomaly": true,
+          "category": "authentication",
+          "failure": [
+            0.35,
+            1
+          ],
+          "novelty": [
+            0,
+            0.2
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.08,
+          "rate": [
+            10,
+            90
+          ],
+          "scheduled": false
+        },
+        "normal_api": {
+          "anomaly": false,
+          "category": "api",
+          "failure": [
+            0,
+            0.1
+          ],
+          "novelty": [
+            0,
+            0.15
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.2,
+          "rate": [
+            10,
+            100
+          ],
+          "scheduled": false
+        },
+        "normal_auth": {
+          "anomaly": false,
+          "category": "authentication",
+          "failure": [
+            0,
+            0.1
+          ],
+          "novelty": [
+            0,
+            0.15
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.2,
+          "rate": [
+            1,
+            15
+          ],
+          "scheduled": false
+        },
+        "normal_workload": {
+          "anomaly": false,
+          "category": "workload",
+          "failure": [
+            0,
+            0.1
+          ],
+          "novelty": [
+            0,
+            0.15
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.2,
+          "rate": [
+            10,
+            100
+          ],
+          "scheduled": false
+        },
+        "operational_surge": {
+          "anomaly": false,
+          "category": "api",
+          "failure": [
+            0,
+            0.15
+          ],
+          "novelty": [
+            0,
+            0.2
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.08,
+          "rate": [
+            80,
+            900
+          ],
+          "scheduled": true
+        },
+        "privilege_usage": {
+          "anomaly": true,
+          "category": "api",
+          "failure": [
+            0,
+            0.1
+          ],
+          "novelty": [
+            0,
+            0.2
+          ],
+          "privilege": [
+            1,
+            1
+          ],
+          "probability": 0.08,
+          "rate": [
+            10,
+            100
+          ],
+          "scheduled": false
+        },
+        "workload_communication": {
+          "anomaly": true,
+          "category": "workload",
+          "failure": [
+            0,
+            0.1
+          ],
+          "novelty": [
+            0.35,
+            1
+          ],
+          "privilege": [
+            0,
+            0
+          ],
+          "probability": 0.08,
+          "rate": [
+            10,
+            100
+          ],
+          "scheduled": false
+        }
+      },
+      "version": "1.0.0"
+    },
+    "seed": 42,
+    "version": "1.0.0",
+    "volume": 4000,
+    "workloads": 12
+  },
+  "files": {
+    "events.jsonl": "eaa7055d8c186c35de8b232d14f4407ea22ae42d75f5be6f8393e656dcd9c643",
+    "ground_truth.jsonl": "8d30579a01b894c3fbb6155876ee56278a89d0e2ccc25c912f80b27f50787978"
+  },
+  "generator_python": "3.12.9",
+  "quality": {
+    "families": {
+      "api_frequency": 285,
+      "failed_auth": 320,
+      "normal_api": 765,
+      "normal_auth": 845,
+      "normal_workload": 820,
+      "operational_surge": 290,
+      "privilege_usage": 330,
+      "workload_communication": 345
+    },
+    "instances": 800,
+    "labels": {
+      "False": 2720,
+      "True": 1280
+    },
+    "partitions": {
+      "holdout": {
+        "True": 345
+      },
+      "test": {
+        "False": 485,
+        "True": 215
+      },
+      "train": {
+        "False": 1620,
+        "True": 555
+      },
+      "validation": {
+        "False": 615,
+        "True": 165
+      }
+    },
+    "rows": 4000
+  },
+  "source_hashes": {
+    "__init__.py": "bd6e4195ca52b9e292940c53bf8aea6cada8092fcfc831fcd2d28f7ab4bd65b0",
+    "benchmark.py": "e8a2a47448670725435b17ccb51d22604e2234ae71c7834748c08d42b242ed37",
+    "dataset.py": "1430327dbca0608e9592ea77db2ab44c68cbc972ce29935bed49c08cc9432be7",
+    "requirements.txt": "16bcb5e22014f4df3e738b1ad65e662e7bc658262db3c96d8ca4931180cf18b8",
+    "risk.py": "8adeaa0295fa0a9d88ca68f37d444906d6871235fdb5ac6c0709cb38c0adda43",
+    "scenarios/v1.json": "3589d6d3e26786c2ef7ee285746a44b97d5d8b9340972548f01c0492c681f7eb",
+    "tests/test_benchmark.py": "6b178fa83c1f81858b510b74c7c584410978ff42444d74d3272d494f18829e23",
+    "tests/test_dataset.py": "99489dbbdc2df21f79ce640f15a76f7120aeae4f86d97634ccf8a509b1fd1ab0",
+    "tests/test_risk.py": "e24d044f1c3354540827e1903d822d50d20bd6d7f63505fe1e34147238dfafd0",
+    "verify.py": "a8657ebcca1f903c1f2f452c62326068bce27209b0ff966d565d806f2a50831c"
+  }
+}

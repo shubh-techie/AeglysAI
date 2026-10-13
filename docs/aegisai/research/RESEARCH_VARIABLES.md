@@ -63,3 +63,14 @@ Distributed timings need clock synchronization/error bounds or runner-controlled
 clocks. Human STEP-UP delay is separate. Preserve raw observations and report
 uncertainty, missingness, exclusions and per-scenario support. These initial
 variables are not a finalized dataset, threshold selection or statistical protocol.
+
+## 2026-10-13 — ACBSD metric implementation amendment
+
+The dated baseline above is preserved. [ACBSD](../../../research/acbsd/README.md)
+now implements EXPERIMENTAL synthetic event-window precision, recall, F1, FPR,
+confusion matrices, ranking AUCs, per-family analysis, grouped uncertainty and narrow
+batch scoring latency. [Methodology](../../../research/acbsd/METHODOLOGY.md)
+fixes its labels, features, grouping and threshold rules; [validation](../../../research/acbsd/VALIDATION.md)
+records actual outcomes. These do not measure unauthorized harmful action rates,
+response completion, policy safety, operational resilience or full Model D overhead.
+The earlier A–C smoke metrics and untested H1–H4 definitions retain their meaning.

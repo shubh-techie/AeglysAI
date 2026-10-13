@@ -1,5 +1,17 @@
 # COM-005 implementation status
 
+## Published implementation reconciliation — 2026-10-11
+
+IMPLEMENTED on public main `711c1556e27bd226c08fb6a8c7b0d9040b4c88ee`,
+including bundled community commit `70dd66c`. Publication is an observed Git fact,
+not security or disclosure clearance. The main publication-safety job fails;
+credential retirement and disclosure decisions remain unresolved.
+
+The old task branch adds no unique implementation or factual development-log
+information. Preserve it for provenance; do not open a redundant implementation PR.
+The local-review checkpoints below are historical, rather than current publication status.
+
+
 IMPLEMENTED locally: all requirements mapped in [the specification](../../docs/aeglysai/specs/SPEC-016-CONTRIBUTOR-ONBOARDING.md).
 TESTED: 12 task acceptance tests passed in the combined recovery snapshot.
 READY_FOR_REVIEW locally: 12 tests also passed in the isolated

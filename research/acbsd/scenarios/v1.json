@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "families": {
+    "normal_auth": {"probability": 0.20, "category": "authentication", "anomaly": false, "rate": [1, 15], "failure": [0, 0.1], "privilege": [0, 0], "novelty": [0, 0.15], "scheduled": false},
+    "normal_api": {"probability": 0.20, "category": "api", "anomaly": false, "rate": [10, 100], "failure": [0, 0.1], "privilege": [0, 0], "novelty": [0, 0.15], "scheduled": false},
+    "normal_workload": {"probability": 0.20, "category": "workload", "anomaly": false, "rate": [10, 100], "failure": [0, 0.1], "privilege": [0, 0], "novelty": [0, 0.15], "scheduled": false},
+    "failed_auth": {"probability": 0.08, "category": "authentication", "anomaly": true, "rate": [10, 90], "failure": [0.35, 1], "privilege": [0, 0], "novelty": [0, 0.2], "scheduled": false},
+    "api_frequency": {"probability": 0.08, "category": "api", "anomaly": true, "rate": [80, 900], "failure": [0, 0.15], "privilege": [0, 0], "novelty": [0, 0.2], "scheduled": false},
+    "privilege_usage": {"probability": 0.08, "category": "api", "anomaly": true, "rate": [10, 100], "failure": [0, 0.1], "privilege": [1, 1], "novelty": [0, 0.2], "scheduled": false},
+    "workload_communication": {"probability": 0.08, "category": "workload", "anomaly": true, "rate": [10, 100], "failure": [0, 0.1], "privilege": [0, 0], "novelty": [0.35, 1], "scheduled": false},
+    "operational_surge": {"probability": 0.08, "category": "api", "anomaly": false, "rate": [80, 900], "failure": [0, 0.15], "privilege": [0, 0], "novelty": [0, 0.2], "scheduled": true}
+  }
+}
