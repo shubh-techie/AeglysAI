@@ -1,0 +1,11 @@
+ Container aegisai-local-tools-run-cca5550634f2 Creating 
+ Container aegisai-local-tools-run-cca5550634f2 Created 
+An issue was encountered verifying workloads. For more information, run "dotnet workload update".
+{"status":"healthy"}
+Correlation: 897265a62cbd49679c1e78e0f8e00620
+{"model":"A","outcome":"ALLOW","reason":"PermissionGranted","policyVersion":"example-model-a-v1","resource":"reports","action":"read"}
+Correlation: 7556685cb4f441cd977de7cd86810c65
+{"model":"B","outcome":"ALLOW","resource":"reports","action":"read","rbac":{"outcome":"ALLOW","reason":"PermissionGranted","policyVersion":"example-model-a-v1"},"abac":{"outcome":"ALLOW","reason":"ConditionsSatisfied","snapshotVersion":"example-model-b-v1"}}
+Correlation: f2b03a0411d644a5a8d8791cf676fc44
+{"model":"C","outcome":"STEP_UP","reason":"AdditionalAssuranceRequired","resource":"reports","action":"read","rbac":{"outcome":"ALLOW","reason":"PermissionGranted","policyVersion":"example-model-a-v1"},"abac":{"outcome":"ALLOW","reason":"ConditionsSatisfied","snapshotVersion":"example-model-b-v1"},"risk":{"score":0.300,"level":"Medium","algorithmVersion":"contextual-weighted-v1","contextVersion":"simulated-context-v1","contributions":[{"signal":"AuthenticationWeakness","value":0,"weight":0.25,"contribution":0.00,"reason":"ConfiguredIndicator"},{"signal":"ResourceSensitivity","value":0.5,"weight":0.25,"contribution":0.125,"reason":"ConfiguredIndicator"},{"signal":"OperationSensitivity","value":0.5,"weight":0.20,"contribution":0.100,"reason":"ConfiguredIndicator"},{"signal":"NetworkExposure","value":0.5,"weight":0.15,"contribution":0.075,"reason":"ConfiguredIndicator"},{"signal":"DeviceExposure","value":0,"weight":0.15,"contribution":0.00,"reason":"ConfiguredIndicator"}]},"obligation":{"code":"VerifyStrongerAuthenticationAndReevaluate","maximumRequestsPerMinute":null}}
+{"model":"A","outcome":"DENY","reason":"NoMatchingPermission","policyVersion":"example-model-a-v1","resource":"reports","action":"write"}

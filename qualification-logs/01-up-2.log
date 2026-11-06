@@ -1,0 +1,111 @@
+ Image aegisai-local-tools Building 
+ Image aegisai-local-api Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.01kB done
+#1 DONE 0.0s
+
+#2 [api internal] load build definition from Dockerfile
+#2 transferring dockerfile: 841B 0.0s done
+#2 DONE 0.1s
+
+#3 [tools internal] load metadata for mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim
+#3 DONE 0.5s
+
+#4 [api internal] load metadata for mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim
+#4 DONE 0.5s
+
+#5 [api internal] load .dockerignore
+#5 transferring context: 778B 0.0s done
+#5 DONE 0.1s
+
+#6 [api internal] load build context
+#6 DONE 0.0s
+
+#7 [tools internal] load build context
+#7 transferring context: 126B 0.0s done
+#7 DONE 0.1s
+
+#8 [api tools 1/3] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:6ba9644da07bb5b560a402acec9ca38711a0762969f1b61da261df5c9f6f85da
+#8 resolve mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:6ba9644da07bb5b560a402acec9ca38711a0762969f1b61da261df5c9f6f85da
+#8 resolve mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:6ba9644da07bb5b560a402acec9ca38711a0762969f1b61da261df5c9f6f85da 0.6s done
+#8 DONE 0.6s
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:ea721098d6ea2894ff9bd8387821a1659d4765d6c014b8d648bb1da16f016f5a
+#9 resolve mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:ea721098d6ea2894ff9bd8387821a1659d4765d6c014b8d648bb1da16f016f5a 0.6s done
+#9 DONE 0.6s
+
+#10 [tools tools 2/3] RUN apt-get update && apt-get install -y --no-install-recommends git     && rm -rf /var/lib/apt/lists/*
+#10 CACHED
+
+#11 [tools tools 3/3] COPY deployment/docker/tools-entrypoint.sh /tools-entrypoint.sh
+#11 CACHED
+
+#6 [api internal] load build context
+#6 transferring context: 3.81kB 0.0s done
+#6 DONE 0.1s
+
+#12 [tools] exporting to image
+#12 exporting layers 0.0s done
+#12 exporting manifest sha256:9fdbf8f74916422c8f209fbe1cece6e44aab42338554468e6b1db82fc554182a 0.0s done
+#12 exporting config sha256:19648f3a2241393e39af0ee5c16806756c2e349d017293a02e9a132c0b24203e 0.0s done
+#12 ...
+
+#13 [api build 3/5] COPY global.json AeglysAI.sln ./
+#13 CACHED
+
+#14 [api build 4/5] COPY src/ src/
+#14 CACHED
+
+#15 [api build 5/5] RUN dotnet publish src/AeglysAI.Api/AeglysAI.Api.csproj -c Release -o /publish
+#15 CACHED
+
+#16 [api api 2/3] WORKDIR /app
+#16 CACHED
+
+#17 [api build 2/5] WORKDIR /source
+#17 CACHED
+
+#18 [api api 3/3] COPY --from=build /publish ./
+#18 CACHED
+
+#12 [tools] exporting to image
+#12 exporting attestation manifest sha256:6d1ac4a61b455ce59a6b3ba49157b50cd25f39ef8925e8240b22846425d3bbf5
+#12 exporting attestation manifest sha256:6d1ac4a61b455ce59a6b3ba49157b50cd25f39ef8925e8240b22846425d3bbf5 0.2s done
+#12 exporting manifest list sha256:9b10c09f5fda0bfc67da4c61e6d33cc5aef10dd79a640f859dee0ed450cfa303
+#12 exporting manifest list sha256:9b10c09f5fda0bfc67da4c61e6d33cc5aef10dd79a640f859dee0ed450cfa303 0.1s done
+#12 naming to docker.io/library/aegisai-local-tools:latest
+#12 naming to docker.io/library/aegisai-local-tools:latest 0.0s done
+#12 unpacking to docker.io/library/aegisai-local-tools:latest 0.0s done
+#12 DONE 0.7s
+
+#19 [api] exporting to image
+#19 exporting layers 0.0s done
+#19 exporting manifest sha256:2a97f7ef0855f0c52b5f8bfea389292cc04425805da2885535b17f9010eed174 0.0s done
+#19 exporting config sha256:6a10ebdd3aea4205d113ac2662c908e7be3f7e9f051d9a8cf13b9936241c99ea 0.0s done
+#19 exporting attestation manifest sha256:cd6f5632f747000ca4e2fa6ab0cfd60c669f98b561607f77383a6bae47504dab 0.2s done
+#19 exporting manifest list sha256:2ebb1686bacd033b3561466220d1244713da4aac66f1605a42e245b46be5fca2 0.1s done
+#19 naming to docker.io/library/aegisai-local-api:latest 0.0s done
+#19 unpacking to docker.io/library/aegisai-local-api:latest 0.0s done
+#19 DONE 0.7s
+
+#20 [tools] resolving provenance for metadata file
+#20 DONE 0.1s
+
+#21 [api] resolving provenance for metadata file
+#21 DONE 0.0s
+ Image aegisai-local-tools Built 
+ Image aegisai-local-api Built 
+ Network aegisai-local_default Creating 
+ Network aegisai-local_default Created 
+ Container aegisai-local-tools-run-fa6e854621e2 Creating 
+ Container aegisai-local-tools-run-fa6e854621e2 Created 
+An issue was encountered verifying workloads. For more information, run "dotnet workload update".
+Generated synthetic local trust and a one-hour credential. Private key discarded; credential not printed.
+ Container aegisai-local-api-1 Creating 
+ Container aegisai-local-api-1 Created 
+ Container aegisai-local-api-1 Starting 
+ Container aegisai-local-api-1 Started 
+ Container aegisai-local-tools-run-235bca8fd190 Creating 
+ Container aegisai-local-tools-run-235bca8fd190 Created 
+An issue was encountered verifying workloads. For more information, run "dotnet workload update".
+{"status":"healthy"}

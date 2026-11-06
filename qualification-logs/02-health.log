@@ -1,0 +1,4 @@
+ Container aegisai-local-tools-run-46d78d74cd65 Creating 
+ Container aegisai-local-tools-run-46d78d74cd65 Created 
+An issue was encountered verifying workloads. For more information, run "dotnet workload update".
+{"status":"healthy"}

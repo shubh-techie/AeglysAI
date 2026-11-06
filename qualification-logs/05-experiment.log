@@ -1,0 +1,129 @@
+ Image aegisai-local-tools Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 556B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 841B 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim
+#3 DONE 0.5s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 778B 0.0s done
+#4 DONE 0.1s
+
+#5 [internal] load build context
+#5 transferring context: 126B 0.0s done
+#5 DONE 0.1s
+
+#6 [tools 1/3] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:6ba9644da07bb5b560a402acec9ca38711a0762969f1b61da261df5c9f6f85da
+#6 resolve mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:6ba9644da07bb5b560a402acec9ca38711a0762969f1b61da261df5c9f6f85da 0.1s done
+#6 DONE 0.2s
+
+#7 [tools 2/3] RUN apt-get update && apt-get install -y --no-install-recommends git     && rm -rf /var/lib/apt/lists/*
+#7 CACHED
+
+#8 [tools 3/3] COPY deployment/docker/tools-entrypoint.sh /tools-entrypoint.sh
+#8 CACHED
+
+#9 exporting to image
+#9 exporting layers 0.0s done
+#9 exporting manifest sha256:9fdbf8f74916422c8f209fbe1cece6e44aab42338554468e6b1db82fc554182a done
+#9 exporting config sha256:19648f3a2241393e39af0ee5c16806756c2e349d017293a02e9a132c0b24203e done
+#9 exporting attestation manifest sha256:4cea95f8e95e5b49ed8f4c2b51246403f78ca3ff3647dc8850ff08f92b9fd5d3
+#9 exporting attestation manifest sha256:4cea95f8e95e5b49ed8f4c2b51246403f78ca3ff3647dc8850ff08f92b9fd5d3 0.2s done
+#9 exporting manifest list sha256:aa535502e239bdd0b90ffcdadef99923ec91f1dd66f237c1d77984a7ca6c16ca
+#9 exporting manifest list sha256:aa535502e239bdd0b90ffcdadef99923ec91f1dd66f237c1d77984a7ca6c16ca 0.1s done
+#9 naming to docker.io/library/aegisai-local-tools:latest 0.0s done
+#9 unpacking to docker.io/library/aegisai-local-tools:latest 0.0s done
+#9 DONE 0.6s
+
+#10 resolving provenance for metadata file
+#10 DONE 0.2s
+ Image aegisai-local-tools Built 
+ Container aegisai-local-tools-run-496a00fe0f1f Creating 
+ Container aegisai-local-tools-run-496a00fe0f1f Created 
+An issue was encountered verifying workloads. For more information, run "dotnet workload update".
+{
+  "CompletedUtc": "2026-11-04T17:17:41.7347597+00:00",
+  "DataKind": "SYNTHETIC",
+  "Version": "synthetic-authorization-smoke-v1",
+  "ModelOrders": [
+    [
+      "B",
+      "A",
+      "C"
+    ],
+    [
+      "C",
+      "A",
+      "B"
+    ],
+    [
+      "B",
+      "C",
+      "A"
+    ]
+  ],
+  "Models": [
+    {
+      "Model": "A",
+      "Attempts": 2400,
+      "Completed": 2400,
+      "Errors": 0,
+      "WindowSeconds": 0.0048715,
+      "DecisionsPerSecond": 492661.3979267166,
+      "MeanMicroseconds": 1.4137933333333343,
+      "P50Microseconds": 0.623,
+      "P95Microseconds": 1.588,
+      "P99Microseconds": 40.909,
+      "Decisions": {
+        "DENY": 600,
+        "ALLOW": 1800,
+        "STEP_UP": 0,
+        "LIMIT": 0
+      }
+    },
+    {
+      "Model": "B",
+      "Attempts": 2400,
+      "Completed": 2400,
+      "Errors": 0,
+      "WindowSeconds": 0.0219522,
+      "DecisionsPerSecond": 109328.44999590017,
+      "MeanMicroseconds": 8.631294166666672,
+      "P50Microseconds": 2.823,
+      "P95Microseconds": 15.603,
+      "P99Microseconds": 63.992,
+      "Decisions": {
+        "DENY": 900,
+        "ALLOW": 1500,
+        "STEP_UP": 0,
+        "LIMIT": 0
+      }
+    },
+    {
+      "Model": "C",
+      "Attempts": 2400,
+      "Completed": 2400,
+      "Errors": 0,
+      "WindowSeconds": 0.0355537,
+      "DecisionsPerSecond": 67503.52284009822,
+      "MeanMicroseconds": 14.101653333333324,
+      "P50Microseconds": 5.712,
+      "P95Microseconds": 62.488,
+      "P99Microseconds": 100.565,
+      "Decisions": {
+        "DENY": 1500,
+        "ALLOW": 300,
+        "STEP_UP": 300,
+        "LIMIT": 300
+      }
+    }
+  ],
+  "ProcessCpuSeconds": 0.15,
+  "AllocatedBytes": 9018936,
+  "Limitations": "Smoke/microbenchmark only. No production performance or detection claims. No durable audit boundary."
+}

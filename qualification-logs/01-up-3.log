@@ -1,0 +1,110 @@
+ Image aegisai-local-api Building 
+ Image aegisai-local-tools Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.01kB done
+#1 DONE 0.0s
+
+#2 [tools internal] load build definition from Dockerfile
+#2 transferring dockerfile: 841B 0.0s done
+#2 DONE 0.1s
+
+#3 [api internal] load metadata for mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim
+#3 DONE 0.4s
+
+#4 [api internal] load metadata for mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim
+#4 DONE 0.4s
+
+#5 [tools internal] load .dockerignore
+#5 transferring context: 778B done
+#5 DONE 0.0s
+
+#6 [api internal] load build context
+#6 DONE 0.0s
+
+#7 [tools internal] load build context
+#7 transferring context: 126B done
+#7 DONE 0.2s
+
+#8 [tools build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:6ba9644da07bb5b560a402acec9ca38711a0762969f1b61da261df5c9f6f85da
+#8 resolve mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:6ba9644da07bb5b560a402acec9ca38711a0762969f1b61da261df5c9f6f85da
+#8 resolve mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:6ba9644da07bb5b560a402acec9ca38711a0762969f1b61da261df5c9f6f85da 0.3s done
+#8 DONE 0.3s
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:ea721098d6ea2894ff9bd8387821a1659d4765d6c014b8d648bb1da16f016f5a
+#9 resolve mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:ea721098d6ea2894ff9bd8387821a1659d4765d6c014b8d648bb1da16f016f5a 0.3s done
+#9 DONE 0.3s
+
+#10 [tools tools 2/3] RUN apt-get update && apt-get install -y --no-install-recommends git     && rm -rf /var/lib/apt/lists/*
+#10 CACHED
+
+#11 [tools tools 3/3] COPY deployment/docker/tools-entrypoint.sh /tools-entrypoint.sh
+#11 CACHED
+
+#6 [api internal] load build context
+#6 transferring context: 3.81kB 0.0s done
+#6 DONE 0.1s
+
+#12 [api build 3/5] COPY global.json AeglysAI.sln ./
+#12 CACHED
+
+#13 [api build 5/5] RUN dotnet publish src/AeglysAI.Api/AeglysAI.Api.csproj -c Release -o /publish
+#13 CACHED
+
+#14 [api api 2/3] WORKDIR /app
+#14 CACHED
+
+#15 [api build 2/5] WORKDIR /source
+#15 CACHED
+
+#16 [api build 4/5] COPY src/ src/
+#16 CACHED
+
+#17 [api api 3/3] COPY --from=build /publish ./
+#17 CACHED
+
+#18 [api] exporting to image
+#18 exporting layers
+#18 exporting layers done
+#18 exporting manifest sha256:2a97f7ef0855f0c52b5f8bfea389292cc04425805da2885535b17f9010eed174 0.0s done
+#18 exporting config sha256:6a10ebdd3aea4205d113ac2662c908e7be3f7e9f051d9a8cf13b9936241c99ea 0.0s done
+#18 exporting attestation manifest sha256:ef72c328696fd76406049bc435b2334775d9dee3f79a13a687f2ab85ce3ba32c
+#18 exporting attestation manifest sha256:ef72c328696fd76406049bc435b2334775d9dee3f79a13a687f2ab85ce3ba32c 0.2s done
+#18 exporting manifest list sha256:41543e82598153afd317484d4fd2a1ad918fd8f8fef8029a427edb2ea265c3d5 0.1s done
+#18 naming to docker.io/library/aegisai-local-api:latest 0.0s done
+#18 unpacking to docker.io/library/aegisai-local-api:latest
+#18 unpacking to docker.io/library/aegisai-local-api:latest 0.0s done
+#18 DONE 0.6s
+
+#19 [tools] exporting to image
+#19 exporting layers done
+#19 exporting manifest sha256:9fdbf8f74916422c8f209fbe1cece6e44aab42338554468e6b1db82fc554182a 0.0s done
+#19 exporting config sha256:19648f3a2241393e39af0ee5c16806756c2e349d017293a02e9a132c0b24203e 0.0s done
+#19 exporting attestation manifest sha256:1481757af2ca2eede79377bef062f1f1824cce551d82f0ece00069707c2a89f0 0.2s done
+#19 exporting manifest list sha256:56c22620a92ef580b827ef01c1ab4c0ada3aadb4ec87fbf51259f08c4a8eae0d 0.1s done
+#19 naming to docker.io/library/aegisai-local-tools:latest 0.0s done
+#19 unpacking to docker.io/library/aegisai-local-tools:latest 0.0s done
+#19 DONE 0.7s
+
+#20 [tools] resolving provenance for metadata file
+#20 DONE 0.1s
+
+#21 [api] resolving provenance for metadata file
+#21 DONE 0.0s
+ Image aegisai-local-api Built 
+ Image aegisai-local-tools Built 
+ Network aegisai-local_default Creating 
+ Network aegisai-local_default Created 
+ Container aegisai-local-tools-run-d9946264682e Creating 
+ Container aegisai-local-tools-run-d9946264682e Created 
+An issue was encountered verifying workloads. For more information, run "dotnet workload update".
+Unhandled exception. System.UnauthorizedAccessException: Access to the path '/local/appsettings.Development.json' is denied.
+ ---> System.IO.IOException: Permission denied
+   --- End of inner exception stack trace ---
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirError)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, UnixFileMode openPermissions, Int64& fileLength, UnixFileMode& filePermissions, Boolean failForSymlink, Boolean& wasSymlink, Func`4 createOpenException)
+   at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.WriteToFile(String path, FileMode mode, String contents, Encoding encoding)
+   at Program.<Main>$(String[] args) in /tmp/tmp.eFyWfrwrj3/deployment/docker/AeglysAI.DevTools/Program.cs:line 22
+   at Program.<Main>(String[] args)
+
